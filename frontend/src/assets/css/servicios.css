@@ -1,0 +1,29 @@
+#servicios{
+    background-color: var(--color-primario);
+    color: #fff;
+    padding: 65px 150px;
+}
+
+
+p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.about_subtitle{
+    margin-bottom: 15px;
+}
+
+.quienes .box{
+}
+
+.quienes img{
+    border-radius: 50%;
+    max-width: 300px;
+}
+
+@media (max-width: 450px){
+    #servicios{
+        padding: 15px;
+    }
+}

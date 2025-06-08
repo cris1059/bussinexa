@@ -1,0 +1,21 @@
+#mision{
+    background-color: #fff;
+    padding: 50px 150px;
+}
+
+
+#mision .boxuno{
+    
+}
+
+.boxmision img{
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000;
+}
+
+@media (max-width: 450px){
+    #mision{
+        padding: 0;
+        padding: 15px;
+    }
+}

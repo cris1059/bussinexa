@@ -1,0 +1,24 @@
+#areas-asesoria{
+    background-color: #fff;
+    padding: 50px 150px;
+}
+
+.listaordenada{
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.sublista{
+    font-weight: 100;
+    padding: 10px 50px;
+}
+
+.sublista li {
+    list-style: circle;
+}
+
+@media (max-width: 450px){
+    #areas-asesoria{
+        padding: 15px;
+    }
+}

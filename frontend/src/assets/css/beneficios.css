@@ -1,0 +1,21 @@
+#beneficios{
+    background-color: var(--color-primario);
+    color: #fff;
+    padding: 65px 150px;
+}
+
+.beneficios{
+    font-weight: bold;
+    list-style: inside;
+}
+
+.sub{
+    font-weight: 100;
+    padding: 10px 50px;
+}
+
+@media (max-width: 450px){
+    #beneficios{
+        padding: 15px;
+    }
+}
