@@ -72,7 +72,7 @@ function Contacto() {
                         method="POST"
                         >
                         <input name="Nombre" type="text" placeholder="Nombre*" required />
-                        <input name="E-mail" type="email" placeholder="EMail*" required />
+                        <input name="E-mail" type="email" placeholder="E-Mail*" required />
                         <input name="Telefono" type="text" placeholder="Teléfono*" required />
                         <textarea name="Comentario" placeholder="Comentarios*" required />
                         <input className="none" type="text" name="_honey"/>
