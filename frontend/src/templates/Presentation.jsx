@@ -50,13 +50,13 @@ function Presentation() {
         <div className="navbar-movil">
           <button className='equis' onClick={toggleMenu}><X size={28} /> </button>
             <div className="options">
-                <Link to="inicio" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Inicio</Link>
-                <Link to="quienes-somos" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Acerca</Link>
-                <Link to="mision" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Mision</Link>
-                <Link to="servicios" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Catalogo</Link>
+                <Link onClick={toggleMenu} to="inicio" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Inicio</Link>
+                <Link onClick={toggleMenu} to="quienes-somos" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Acerca</Link>
+                <Link onClick={toggleMenu} to="mision" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Mision</Link>
+                <Link onClick={toggleMenu} to="servicios" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Catalogo</Link>
                 {/*<Link to="areas-asesoria" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Asesoria</Link>*/}
-                <Link to="beneficios" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Beneficios</Link>
-                <Link to="contacto" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Contacto</Link>
+                <Link onClick={toggleMenu} to="beneficios" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Beneficios</Link>
+                <Link onClick={toggleMenu} to="contacto" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Contacto</Link>
             </div>
         </div>
       )}
