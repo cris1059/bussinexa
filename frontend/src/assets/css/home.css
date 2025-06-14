@@ -36,8 +36,19 @@
     justify-content: center;
     font-family: 'Baskerville Old Face', serif;
     margin-top: 100px;
+    margin-bottom: 0;
     position: relative;   
     z-index: -1;
+}
+
+.subtitleB{
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    opacity: 0;
+    text-align: center;
+      animation: fadeInF 1.5s ease forwards;
+  animation-delay: 2s; 
 }
 
 .text-part {
