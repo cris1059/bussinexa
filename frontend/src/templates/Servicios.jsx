@@ -81,7 +81,7 @@ function Servicios() {
 
   return (
     <section id="servicios">
-      <h2 data-aos="zoom-in">Catálogo de Servicios</h2>
+      <h2 data-aos="zoom-in">Catálogo</h2>
       <div data-aos="zoom-in" className='content_catalogo'>
 
       <div className='iconosS'>
