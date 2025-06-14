@@ -13,7 +13,7 @@
     box-shadow: 0 0 10px #000;
 }
 
-@media (max-width: 450px){
+@media (max-width: 620px){
     #mision{
         padding: 0;
         padding: 15px;

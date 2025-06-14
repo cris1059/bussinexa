@@ -14,7 +14,7 @@
     padding: 10px 50px;
 }
 
-@media (max-width: 450px){
+@media (max-width: 620px){
     #beneficios{
         padding: 15px;
     }

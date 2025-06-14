@@ -6,12 +6,11 @@ function Beneficios() {
 
     return (
         <section id="beneficios"> 
-            <h2>Beneficios</h2>
+            <h2 data-aos="fade-left">Beneficios</h2>
             
-                <div className="quienes">
+                <div className="quienes" data-aos="fade-left">
     
                     <div className='box boxuno'>
-                        <h3 className='subtitle about_subtitle'>¿Qué beneficios ofrece nuestro servicio de asesoría?</h3>
                         <ol className='beneficios'>
                             <li>Capacitación
                                 <ul className='sub'>

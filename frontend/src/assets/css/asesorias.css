@@ -17,7 +17,7 @@
     list-style: circle;
 }
 
-@media (max-width: 450px){
+@media (max-width: 620px){
     #areas-asesoria{
         padding: 15px;
     }

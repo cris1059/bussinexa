@@ -1,13 +1,24 @@
 import '../assets/css/acerca.css';
 import Somos from '../assets/img/somos.jpg';
 import Exp from '../assets/img/exp.jpg';
+import { useEffect } from 'react';
+import { Link  } from 'react-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Acerca() {
     
+        useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          once: true,
+        });
+      }, []);
+
     return (
         <section id="quienes-somos">
-            <h2>Acerca De Nosotros</h2>
-            <div className='quienes'>
+            <h2 data-aos="zoom-in">Acerca De Nosotros</h2>
+            <div className='quienes' data-aos="zoom-in">
 
                 <div className='box uno'>
                     <h3 className='subtitle about_subtitle'>¿Quiénes Somos?</h3>
@@ -18,21 +29,6 @@ function Acerca() {
 
                 <div className='box'>
                     <img src={Somos} alt="somos" />
-                </div>
-
-            </div>
-
-            <div className='quienes'>
-
-                <div className='box none'>
-                    <img src={Exp} alt="somos" />
-                </div>
-
-                <div className='box uno'>
-                    <h3 className='subtitle about_subtitle'>¿Cuál es nuestra experiencia?</h3>
-                    <p>
-                        Contamos con más de 20 años de experiencia y resultados comprobados en todo el país. Hemos acompañado a empresas y proyectos de diversos sectores, brindando apoyo desde la planificación estratégica hasta la ejecución de soluciones efectivas.
-                    </p>
                 </div>
 
             </div>

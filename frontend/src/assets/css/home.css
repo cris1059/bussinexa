@@ -7,28 +7,117 @@
     margin-top: 40px;
 }
 
-.frase{
+.frase {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  margin: 30px 150px;
+  opacity: 0; /* empieza invisible */
+  animation: fadeInF 1.5s ease forwards;
+  animation-delay: 3s; /* espera 8 segundos antes de iniciar la animación */
+}
+
+@keyframes fadeInF {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.split-text-container {
+    display: flex;
+    font-size: 5rem;
+    text-transform: uppercase;
     color: #fff;
-    text-align: center;
-    font-size: 50px;
-    margin: 30px 150px;
+    overflow: hidden;
+    justify-content: center;
+    font-family: 'Baskerville Old Face', serif;
+    margin-top: 100px;
+    position: relative;   
+    z-index: -1;
 }
 
-@media (max-width: 1024px){
-
-
-
+.text-part {
+    display: inline-block;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 }
 
-@media (max-width: 450px){
+.text-part.left {
+    transform: translateX(-200%);
+    animation-name: slide-in-left;
+}
 
-    .title{
-        font-size: 60px;
+.text-part.right {
+    transform: translateX(200%);
+    animation-name: slide-in-right;
+}
+
+
+.Fondoflecha{
+    position: absolute;
+    top: 100px;
+    width: 450px;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 2s;
+    z-index: -2;
+      left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
     }
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@media (max-width: 620px){
+
+    .split-text-container {
+    display: flex;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #fff;
+    overflow: hidden;
+    justify-content: center;
+    font-family: 'Baskerville Old Face', serif;
+    z-index: -5;
+    margin-top: 100px;
+}
 
     .frase{
         margin: 25px 0;
-        font-size: 25px;
+        font-size: 20px !important;
     }
+
+    .Fondoflecha{
+    top: 90px !important;
+    width: 250px !important;
+    z-index: -10 !important;
+}
 }
 

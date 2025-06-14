@@ -19,7 +19,6 @@ function Contacto() {
           sitekey: "6LdCFVkrAAAAADnCLpx9GzEL7B0k0jrsG3afN8fk",
         });
 
-        // Marcar el div para no renderizarlo otra vez
         document
           .getElementById("recaptcha-container")
           .setAttribute("data-widget-id", widgetId);
@@ -40,8 +39,8 @@ function Contacto() {
 
     return (
         <section id="contacto">
-            <h2>Contacto</h2>
-            <div className="contacto">
+            <h2 data-aos="fade-right">Contacto</h2>
+            <div data-aos="fade-right" className="contacto">
                 <div className="redes-sociales">
                     <h3>Redes Sociales</h3>
                     <div className="redesicons">

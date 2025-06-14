@@ -6,16 +6,17 @@
     top: 0;
     border: none;
     box-shadow: none;
+    z-index: 99999;
 }
 
 .escritorio{
     color: #fff;
     background-color: var(--color-terciario);
-    width: 600px;
+    width: fit-content;
     display: flex;
     justify-content: center;
     padding: 0;
-    padding: 15px;
+    padding: 15px 25px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 0 7px 10px #000;
@@ -26,7 +27,7 @@
     padding: 0;
 }
 
-@media (max-width: 450px){
+@media (max-width: 620px){
 
     .navbar{
         display: none;

@@ -25,8 +25,8 @@ p{
 }
 
 .quienes img{
-    border-radius: 50%;
-    max-width: 300px;
+    border-radius: 9px;
+    max-width: 360px;
 }
 
 @media (max-width: 1024px){
@@ -41,7 +41,7 @@ p{
 
 }
 
-@media (max-width: 450px){
+@media (max-width: 620px){
 
     #quienes-somos{
         padding: 15px;
