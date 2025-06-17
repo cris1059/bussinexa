@@ -1,7 +1,6 @@
 #quienes-somos{
     background-color: var(--color-primario);
     color: #fff;
-    padding: 65px 150px;
 }
 
 p{
@@ -27,6 +26,30 @@ p{
 .quienes img{
     border-radius: 9px;
     max-width: 360px;
+}
+
+.carrusel{
+    position: relative;
+}
+
+.btnizq, .btnder{
+    top: 11%;
+    height: 78%;
+    width: 30px;
+    display: none;
+}
+
+.carrusel:hover .btnizq,
+.carrusel:hover .btnder {
+  display: block;
+}
+
+.btnder{
+    right: 0;
+}
+
+.btnizq:hover, .btnder:hover{
+    cursor: pointer;
 }
 
 @media (max-width: 1024px){
@@ -64,4 +87,10 @@ p{
         margin: 10px;
         margin-top: 0;
     }
+
+    .quienes img{
+    border-radius: 9px;
+    max-width: 360px;
+    max-height: 200px;
+}
 }

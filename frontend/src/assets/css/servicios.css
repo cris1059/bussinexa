@@ -1,7 +1,10 @@
 #servicios{
     background-color: var(--color-primario);
     color: #fff;
-    padding: 65px 150px;
+}
+
+#servicios h2{
+    margin-bottom: 30px;
 }
 
 
