@@ -22,8 +22,8 @@
 
 body {
     background-image: url('../img/fondo.jpg');
-    background-repeat: no-repeat;    
-    background-size: 100% auto; 
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     font-family: 'Merriweather', serif;
 }
 
@@ -39,8 +39,10 @@ body::before {
 }
 
 .subtitle{
+
     font-size: 35px;
     font-weight: bold;
+
 }
 
 h2{
@@ -50,8 +52,6 @@ h2{
 .none{
     display: none;
 }
-
-
 
 @media (max-width: 1024px){
 
