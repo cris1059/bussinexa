@@ -15,7 +15,6 @@ function Acerca() {
   const [indice, setIndice] = useState(0);
   const [fade, setFade] = useState(true);
 
-  // Cambio automático con fade
   useEffect(() => {
     const intervalo = setInterval(() => {
       cambiarImagen((indice + 1) % imagenes.length);
@@ -28,7 +27,7 @@ function Acerca() {
     setTimeout(() => {
       setIndice(nuevoIndice);
       setFade(true);
-    }, 300); // 300 ms para el fade-out
+    }, 300); 
   };
 
   const avanzar = () => cambiarImagen((indice + 1) % imagenes.length);
