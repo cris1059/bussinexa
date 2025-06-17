@@ -20,10 +20,11 @@
 }
 
 
-body {
-    background-image: url('../img/fondo.jpg');
+body{
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-position: top center;
+    background-size: 100% 10%;
+    background-attachment: scroll;
     font-family: 'Merriweather', serif;
 }
 
