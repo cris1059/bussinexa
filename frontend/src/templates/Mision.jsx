@@ -1,11 +1,9 @@
 import '../assets/css/mision.css';
-import Misionimg from '../assets/img/mision.jpg';
 import { useState, useEffect } from 'react';
-import Creer from '../assets/img/creer.jpg';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Imagen1 from '../assets/img/mision1.jpg';
+import Imagen1 from '../assets/img/Mision1.jpg';
 import Imagen2 from '../assets/img/mision2.jpg';
 import Imagen3 from '../assets/img/mision3.jpg';
 
