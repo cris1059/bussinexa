@@ -19,12 +19,18 @@
     font-style: normal;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
+
 
 body{
     background-image: url('../img/fondo.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
     font-family: 'Merriweather', serif;
+  overflow-x: hidden;
 }
 
 body::before {
@@ -82,9 +88,8 @@ h2{
         top: 130px !important;
     }
 
-            .iconosS{
+    .iconosS{
     flex-direction: column;
-    padding: 40px;
 }
 
     .iconosS .grupo{

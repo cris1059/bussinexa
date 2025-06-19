@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import '../assets/css/servicios.css';
-import Serv from "../assets/img/servicios.jpg";
-import Prod from "../assets/img/productos.jpg";
-import Ases from "../assets/img/asesoria.jpg";
-import Curs from "../assets/img/cursos.jpg";
+import Serv from "../assets/img/icons/catalogo/servicio2.png"
+import Prod from "../assets/img/icons/catalogo/producto2.png";
+import Ases from "../assets/img/icons/catalogo/asesoria.png";
+import Curs from "../assets/img/icons/catalogo/cursos.png";
 
 function Servicios() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -86,30 +86,35 @@ function Servicios() {
 
       <div className='iconosS'>
           <div className="grupo">
-    {items.slice(0, 2).map((item, index) => (
-      <div
-        className='img cursor-pointer'
-        key={index}
-        onClick={() => { openModal(item); console.log(index); }}
-      >
-        <h5 className='servititleM'>{item.title}</h5>
-        <img src={item.img} alt={item.title} />
-      </div>
-    ))}
-  </div>
+            {items.slice(0, 2).map((item, index) => (
+              <div
+                className='img cursor-pointer'
+                key={index}
+                onClick={() => { openModal(item); console.log(index); }}
+              >
+                <h5 className='servititleM'>{item.title}</h5>
+                <div className='circulo'>
+                  <img src={item.img} alt={item.title} />
+                </div>
+                
+              </div>
+            ))}
+          </div>
 
-  <div className="grupo">
-    {items.slice(2, 4).map((item, index) => (
-      <div
-        className='img cursor-pointer'
-        key={index + 2}
-        onClick={() => { openModal(item); console.log(index + 2); }}
-      >
-        <h5 className='servititleM'>{item.title}</h5>
-        <img src={item.img} alt={item.title} />
+      <div className="grupo">
+        {items.slice(2, 4).map((item, index) => (
+          <div
+            className='img cursor-pointer'
+            key={index + 2}
+            onClick={() => { openModal(item); console.log(index + 2); }}
+          >
+            <h5 className='servititleM'>{item.title}</h5>
+            <div className='circulo'>
+                  <img src={item.img} alt={item.title} />
+                </div>
+          </div>
+        ))}
       </div>
-    ))}
-  </div>
       </div>
 
 </div>
