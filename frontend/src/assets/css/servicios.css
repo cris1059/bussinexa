@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
 #servicios{
     background-color: var(--color-primario);
     color: #fff;
     display: flex;
     flex-direction: column;
+    font-family: 'Playfair Display', serif;
 }
 
 #servicios h2{
@@ -29,11 +33,11 @@ p{
 
 .content_catalogo .img {
     text-align: center;
-    padding: 15px;
 }
 
 .content_catalogo h5{
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .iconosS{
@@ -59,7 +63,8 @@ p{
 }
 
 .circulo img{
-    padding: 50px;
+    padding: 30px;
+    
     transition: transform 0.3s ease;
 }
 
