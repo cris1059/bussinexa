@@ -20,16 +20,14 @@
 }
 
 html, body {
-    overflow-x: hidden;
 }
-
 
 
 body{
     background-image: url('../img/fondo.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
-    font-family: 'Merriweather', serif;
+    font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
 
@@ -57,6 +55,10 @@ h2{
 
 .none{
     display: none;
+}
+
+.content_home{
+    position: relative;
 }
 
 @media (max-width: 1024px){

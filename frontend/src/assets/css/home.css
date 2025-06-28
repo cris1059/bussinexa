@@ -11,10 +11,11 @@
   color: #fff;
   text-align: center;
   font-size: 50px;
-  margin: 30px 150px;
+  margin: 50px 150px;
   opacity: 0; /* empieza invisible */
   animation: fadeInF 1.5s ease forwards;
-  animation-delay: 3s; /* espera 8 segundos antes de iniciar la animación */
+  animation-delay: 3s;
+    
 }
 
 @keyframes fadeInF {

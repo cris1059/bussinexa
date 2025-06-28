@@ -1,4 +1,9 @@
 import '../assets/css/beneficios.css';
+import Capc from "../assets/img/icons/beneficios/capacitacion.jpg";
+import Soluc from "../assets/img/icons/beneficios/soluciones.jpg";
+import Cont from "../assets/img/icons/beneficios/contactos.jpg";
+import Res from "../assets/img/icons/beneficios/resultados.jpg";
+
 
 
 function Beneficios() {
@@ -10,32 +15,39 @@ function Beneficios() {
             
                 <div className="quienes" data-aos="fade-left">
     
-                    <div className='box boxuno'>
-                        <ol className='beneficios'>
-                            <li>Capacitación
-                                <ul className='sub'>
-                                    <li>Desarrollamos habilidades gerenciales y operativas para emprendedores, directivos y personal clave.</li>
-                                </ul>
-                            </li>
-                            <li>Soluciones Personalizadas
-                                <ul className="sub">
-                                    <li>Cada empresa es única. Por eso, nuestras estrategias se adaptan a las características y necesidades de cada cliente.</li>
-                                </ul>
-                            </li>
-                            <li>Red de Contactos
-                                <ul className="sub">
-                                    <li>Ofrecemos acceso a una red de expertos, instituciones y aliados en distintas industrias.</li>
-                                </ul>
-                            </li>
-                            <li>Resultados Reales
-                                <ul className="sub">
-                                    <li>Trabajamos con enfoque práctico, orientados a generar resultados tangibles y medibles en cada etapa del proyecto.</li>
-                                </ul>
-                            </li>
-                        </ol>
+                    <div className='benef'>
+                        <div className='apartado'>
+                            <div className='img'>
+                                <img src={Capc} alt="" />
+                            </div>
+                            <h2>Capacitación</h2>
+                            <h4>Desarrollamos habilidades gerenciales y operativas para emprendedores, directivos y personal clave.</h4>
+                        </div>
+                        <div className='apartado'>
+                            <div className='img'>
+                                <img src={Soluc} alt="" />
+                            </div>
+                            <h2>Soluciones Personalizadas</h2>
+                            <h4>Cada empresa es única. Por eso, nuestras estrategias se adaptan a las características y necesidades de cada cliente.</h4>
+                        </div>
+                        <div className='apartado'>
+                            <div className='img'>
+                                <img src={Cont} alt="" />
+                            </div>
+                            <h2>Red de Contactos</h2>
+                            <h4>Ofrecemos acceso a una red de expertos, instituciones y aliados en distintas industrias.</h4>
+                        </div>
+                        <div className='apartado'>
+                            <div className='img'>
+                                <img src={Res} alt="" />
+                            </div>
+                            <h2>Resultados Reales</h2>
+                            <h4>Trabajamos con enfoque práctico, orientados a generar resultados tangibles y medibles en cada etapa del proyecto.</h4>
+                        </div>
                     </div>
     
                 </div>
+                
         </section>
     )
 }

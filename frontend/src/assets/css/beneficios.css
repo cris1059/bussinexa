@@ -1,11 +1,53 @@
 #beneficios{
-    background-color: var(--color-primario);
-    color: #fff;
+    background-color: #fff;
+    color: #000;
+    margin-top: ;
 }
 
 .beneficios{
     font-weight: bold;
     list-style: inside;
+}
+
+.benef{
+    display: flex;
+    padding: 0 70px;
+}
+
+.benef .apartado{
+    color: #fff;
+    width: 230px;
+    margin: 0 15px;
+    background-color: var(--color-primario);
+    border-radius: 12px;
+    box-shadow: 0 0 10px #000;
+}
+
+.benef .apartado h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.benef .apartado h4{
+    text-align: justify;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.apartado .img {
+  width: 100%;
+  height: 150px; /* Ajusta la altura según tu diseño */
+  overflow: hidden;
+  position: relative;
+}
+
+.apartado .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; /* centra la imagen en el recorte */
 }
 
 .sub{

@@ -1,0 +1,40 @@
+#Servicio{
+    background-color: #fff;
+    width: 100vw;
+    padding: 10px 50px;
+}
+
+#Servicio .apartado{
+    padding: 20px 50px;
+    display: flex;
+}
+
+.apartado .leyenda{
+    padding: 5px 20px;
+}
+
+.apartado h2{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.apartado p{
+    font-size: 25px;
+}
+
+.fade-static {
+    width: 35%;
+    height: auto;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.left{
+    mask-image: linear-gradient(to right, black 1%, transparent 100%);
+}
+
+.rigth{
+    mask-image: linear-gradient(to left, black 1%, transparent 100%);
+}

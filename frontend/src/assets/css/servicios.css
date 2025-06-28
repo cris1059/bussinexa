@@ -10,7 +10,8 @@
 }
 
 #servicios h2{
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -54,41 +55,63 @@ p{
 }
 
 .img .circulo{
-    max-width: 300px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
     border-radius: 50%;
     display: flex;
-    box-sizing: border-box;
-    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px;
 
 }
 
-.circulo img{
-    padding: 30px;
-    
-    transition: transform 0.3s ease;
+
+.circulo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.3);
+    z-index: 1;
+    position: relative;
+    transition: 0.3s ease;
 }
 
-.circulo img:hover{
-     filter: brightness(0.7);
-      transform: scale(1.05);
-  cursor: pointer;
+
+.circulo h5{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease; 
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.circulo:hover h5 {
+    transform: translateY(-50%) scale(0.8); 
 }
 
 .tooltip-servicios {
-  position: absolute;
-  top:  270px;
-  left: 0%;
-  transform: translateX(-50%);
-  background-color: white;
-  padding: 10px 0px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  font-size: 0.9rem;
-  font-weight: bold;
-  width: 220px;
-  z-index: 10;
-  color: #333;
-  text-align: center;
-  border-radius: 9px;
+    position: absolute;
+    top:  270px;
+    left: 0%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 10px 0px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 220px;
+    z-index: 10;
+    color: #333;
+    text-align: center;
+    border-radius: 9px;
 }
 
 

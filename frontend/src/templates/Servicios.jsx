@@ -1,18 +1,22 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import '../assets/css/servicios.css';
-import Serv from "../assets/img/icons/catalogo/servicio2.png"
-import Prod from "../assets/img/icons/catalogo/producto2.png";
-import Ases from "../assets/img/icons/catalogo/asesoria.png";
-import Curs from "../assets/img/icons/catalogo/cursos.png";
+import Serv from "../assets/img/catalogo/servicios.jpg";
+import Prod from "../assets/img/catalogo/productos.jpg";
+import Ases from "../assets/img/catalogo/asesoria.jpg";
+import Curs from "../assets/img/catalogo/cursos.jpg";
+
+{/*IMAGENES SERVICIOS */}
 
 function Servicios() {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
+  const navigate = useNavigate();
 
   const items = [
     {
-      title: "Servicios",
+      title: "Servicios Empresariales",
       img: Serv,
         desc: [
   "• Consultoría en aspectos financieros, administrativos y legales.",
@@ -21,9 +25,10 @@ function Servicios() {
   "• Protección patronal y revisión de Reglamento Interior de Trabajo",
   "• Diseño de cartera de clientes nacionales e internacionales"
 ],
+link: "/servicios",
     },
     {
-      title: "Productos",
+      title: "Soluciones Integrales para Empresas",
       img: Prod,
       desc: [
   "• Consultoría en aspectos financieros, administrativos y legales.",
@@ -41,7 +46,7 @@ function Servicios() {
 ,
     },
     {
-      title: "Asesoría",
+      title: "Asesoría Especializada",
       img: Ases,
       desc: [
   "• Asesoría empresarial para emprendedores",
@@ -74,6 +79,10 @@ function Servicios() {
     setModalOpen(true);
   };
 
+  const Navegar = (ruta) => {
+    navigate(ruta);
+  }
+
   const closeModal = () => {
     setModalOpen(false);
     setSelectedItem(null);
@@ -81,7 +90,7 @@ function Servicios() {
 
   return (
     <section id="servicios">
-      <h2 data-aos="zoom-in">Catálogo</h2>
+      <h2 data-aos="zoom-in">Impulsa tu Negocio con Nuestros Servicios Especializados</h2>
       <div data-aos="zoom-in" className='content_catalogo'>
 
       <div className='iconosS'>
@@ -90,10 +99,10 @@ function Servicios() {
               <div
                 className='img cursor-pointer'
                 key={index}
-                onClick={() => { openModal(item); console.log(index); }}
+                onClick={() => { Navegar(item.link); }}
               >
-                <h5 className='servititleM'>{item.title}</h5>
                 <div className='circulo'>
+                  <h5 className='servititleM'>{item.title}</h5>
                   <img src={item.img} alt={item.title} />
                 </div>
                 
@@ -108,8 +117,8 @@ function Servicios() {
             key={index + 2}
             onClick={() => { openModal(item); console.log(index + 2); }}
           >
-            <h5 className='servititleM'>{item.title}</h5>
             <div className='circulo'>
+                  <h5 className='servititleM'>{item.title}</h5>
                   <img src={item.img} alt={item.title} />
                 </div>
           </div>
