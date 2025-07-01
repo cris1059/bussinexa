@@ -73,10 +73,10 @@ function Mision() {
 
                 <div className='box boxuno'>
                     <p>
-                        Nuestra misión es ser el aliado estratégico que guía a emprendedores y empresas en su
-                        camino hacia el éxito, ofreciendo asesoramiento experto y estrategias a medida.
-                        Creemos en el poder del talento, la creatividad y la colaboración para transformar
-                        negocios y crear oportunidades sostenibles.
+                        Nuestra misión es ser el aliado estratégico que guía a emprendedores y empresas en su camino hacia el éxito, ofreciendo asesoramiento experto y estrategias a medida.
+Creemos en el poder del talento, la creatividad y la colaboración para transformar negocios y crear oportunidades sostenibles. <br />
+En Bussinexa, nos enorgullece ser parte del viaje empresarial de nuestros clientes, ayudándolos a superar desafíos, alcanzar sus metas y llevar sus proyectos al mercado.
+¡Porque cuando nuestros clientes crecen, nosotros crecemos con ellos!
                     </p>
                 </div>
 

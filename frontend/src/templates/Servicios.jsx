@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import '../assets/css/servicios.css';
 import Serv from "../assets/img/catalogo/servicios.jpg";
 import Prod from "../assets/img/catalogo/productos.jpg";
@@ -10,8 +10,6 @@ import Curs from "../assets/img/catalogo/cursos.jpg";
 {/*IMAGENES SERVICIOS */}
 
 function Servicios() {
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(null);
   const navigate = useNavigate();
 
   const items = [
@@ -25,7 +23,7 @@ function Servicios() {
   "• Protección patronal y revisión de Reglamento Interior de Trabajo",
   "• Diseño de cartera de clientes nacionales e internacionales"
 ],
-link: "/servicios",
+link: "/servicios_empresariales",
     },
     {
       title: "Soluciones Integrales para Empresas",
@@ -44,6 +42,7 @@ link: "/servicios",
   "• Capacitación y motivación de personal"
 ]
 ,
+link: "/soluciones_integrales_para_empresas",
     },
     {
       title: "Asesoría Especializada",
@@ -58,6 +57,7 @@ link: "/servicios",
   "• Vinculación con mercados internacionales, apoyo en la planeación de la sucesión de socios"
 ]
 ,
+link: "/asesoria_especializada"
     },
     {
       title: "Cursos",
@@ -71,22 +71,14 @@ link: "/servicios",
   "• Elaboración CV personal y empresarial"
 ]
 ,
+link: "/cursos"
     },
   ];
 
-  const openModal = (item) => {
-    setSelectedItem(item);
-    setModalOpen(true);
-  };
 
   const Navegar = (ruta) => {
     navigate(ruta);
   }
-
-  const closeModal = () => {
-    setModalOpen(false);
-    setSelectedItem(null);
-  };
 
   return (
     <section id="servicios">
@@ -115,7 +107,7 @@ link: "/servicios",
           <div
             className='img cursor-pointer'
             key={index + 2}
-            onClick={() => { openModal(item); console.log(index + 2); }}
+            onClick={() => { Navegar(item.link); }}
           >
             <div className='circulo'>
                   <h5 className='servititleM'>{item.title}</h5>
@@ -127,41 +119,6 @@ link: "/servicios",
       </div>
 
 </div>
-
-
-      {/* Modal pantalla completa */}
-      <AnimatePresence>
-        {modalOpen && selectedItem && (
-          <motion.div
-            className="fixed inset-0 bg-opacity-70 flex items-center justify-center z-50"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <motion.div
-              className="modal"
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              transition={{ duration: 0.2 }}
-            >
-              <button
-                className="close"
-                onClick={closeModal}
-              >
-                X
-              </button>
-              <h3 className="text-xl text-black font-bold mb-2">{selectedItem.title}</h3>
-              <ul className="text-left space-y-1 text-sm text-gray-700">
-                {selectedItem.desc.map((line, i) => (
-                    <li key={i}>{line}</li>
-                ))}
-                </ul>
-
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </section>
   );
 }

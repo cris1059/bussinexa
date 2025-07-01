@@ -31,10 +31,10 @@
     border-radius: 10px;
 }
 
-.left{
+#Servicio .left{
     mask-image: linear-gradient(to right, black 1%, transparent 100%);
 }
 
-.rigth{
+#Servicio .rigth{
     mask-image: linear-gradient(to left, black 1%, transparent 100%);
 }

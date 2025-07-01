@@ -16,6 +16,7 @@ function Experiencia() {
                     
                     <div className="apartado">
                         <img src={Exp} alt="" />
+                        {/* <h2>¿Quienes somos?</h2> */}
                         <h3>20 años impulsando
                             emprendedores y empresas mexicanas
                         </h3>

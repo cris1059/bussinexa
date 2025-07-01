@@ -42,7 +42,7 @@ function Acerca() {
 
   return (
     <section id="quienes-somos">
-      <h2 data-aos="zoom-in">Acerca De Nosotros</h2>
+      <h2 data-aos="zoom-in">Acerca de nosotros</h2>
       <div className='quienes' data-aos="zoom-in">
 
         <div className='box uno'>

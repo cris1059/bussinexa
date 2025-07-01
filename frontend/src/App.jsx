@@ -10,13 +10,14 @@ import Presentation from './templates/Presentation';
 import Acerca from './templates/Acerca';
 import Mision from './templates/Mision';
 import Servicios from './templates/Servicios';
-import Asesorias from './templates/Asesorias';
+import Asesorias from './templates/servicios/Asesorias';
 import Beneficios from './templates/Beneficios';
 import Contacto from './templates/Contacto';
 import Footer from './templates/Footer';
 import Exp from "./templates/Experiencia";
 import SE from "./templates/servicios/Servicios_empresariales";
-import WpIc from "./templates/Wp_icon";
+import SIE from "./templates/servicios/SIE";
+import Cursos from "./templates/servicios/Cursos";
 
 
 
@@ -33,7 +34,7 @@ function Navbar() {
           <Link to="servicios" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Servicios</Link>
           <Link to="beneficios" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Beneficios</Link>
           <Link to="quienes-somos" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Acerca</Link>
-          <Link to="mision" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Mision</Link>
+          <Link to="mision" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Nosotros</Link>
           {/*<Link to="areas-asesoria" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Asesoria</Link>*/}
           <Link to="contacto" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Contacto</Link>
           
@@ -74,6 +75,9 @@ function App() {
           }
         />
         <Route path="/servicios_empresariales" element={<SE />} />
+        <Route path="/soluciones_integrales_para_empresas" element={<SIE />} />
+        <Route path="/asesoria_especializada" element={<Asesorias />} />
+        <Route path="/cursos" element={<Cursos />} />
       </Routes>
     </Router>
   );
