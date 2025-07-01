@@ -34,7 +34,7 @@ function Navbar() {
           <Link to="servicios" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Servicios</Link>
           <Link to="beneficios" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Beneficios</Link>
           <Link to="quienes-somos" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Acerca</Link>
-          <Link to="mision" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Nosotros</Link>
+          <Link to="mision" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Misión</Link>
           {/*<Link to="areas-asesoria" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Asesoria</Link>*/}
           <Link to="contacto" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Contacto</Link>
           
