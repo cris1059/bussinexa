@@ -68,7 +68,11 @@
     
     .benef .apartado{
         color: #fff;
-        width: 182px;
+        width: 165px;
         margin: 05px;
+    }
+
+    .apartado h4{
+        font-size: 13px !important;
     }
 }
