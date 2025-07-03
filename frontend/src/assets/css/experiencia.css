@@ -56,6 +56,10 @@ margin: 25px 0;
         justify-content: center;
     }
 
+    .fond h2{
+        font-size: 25px;
+}
+
     .exp .apartado{
         width: 89px;
     }
