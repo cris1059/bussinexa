@@ -90,7 +90,7 @@ function Acerca() {
 
                 
         <div className="box carrusel relative">
-          <div className="c_img overflow-hidden rounded-xl">
+          <div className="c_img c_imgN overflow-hidden rounded-xl">
             <img
               src={imagenes[indice]}
               alt={`slide-${indice}`}

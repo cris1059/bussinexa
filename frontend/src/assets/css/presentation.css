@@ -42,7 +42,8 @@
     }
 
     #home{
-        position: sticky;
+        position: fixed;
+        width: 102%;
         top: 0;
     }
 
