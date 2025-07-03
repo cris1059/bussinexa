@@ -150,3 +150,38 @@
     color: #000;
 }
     */
+
+@media (max-width: 620px){
+.modal-conten .imagenesL{
+    width: 100px;
+    height: 100px;
+}
+
+.modal-conten .producto{
+    padding: 0;
+    margin: 0;
+}
+
+.modal-conten h2{
+    margin: 0 !important;
+    font-size: 20px !important;
+}
+
+.modal-conten h5{
+    font-size: 18px !important;
+}
+
+.modal-conten h6{
+    font-size: 15px;
+}
+
+.modal-conten li{
+    font-size: 14px;
+}
+
+.modal-conten .btn_contac{
+    font-size: 15px;
+}
+
+
+}

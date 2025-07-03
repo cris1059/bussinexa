@@ -11,3 +11,9 @@
     color: #fff;
     cursor: pointer;
 }
+
+@media (max-width: 620px){
+    .btn_volver{
+        margin-top: 60px;
+    }
+}

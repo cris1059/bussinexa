@@ -191,7 +191,7 @@ function Cursos() {
             <section id="areas-asesoria">
                 <button className="btn_volver" onClick={Navegar}>Volver</button>
                 
-                <h2 style={{textAlign: "center", margin: "30px"}}>Cursos disponibles</h2>
+                <h2 style={{textAlign: "center", margin: "0 30px", marginBottom: "30px"}}>Cursos disponibles</h2>
                 <div>
                     <div className="card-containe">
                 {cursos.map((cursos) => (

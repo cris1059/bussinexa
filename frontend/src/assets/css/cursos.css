@@ -4,13 +4,13 @@
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 950px;
+    max-width: 700px;
     margin: auto;
 }
 
 .car {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 10px;
     position: relative;
 
@@ -44,4 +44,10 @@
 
 .car:hover h3{
     transform: translateY(-50%) scale(0.8); 
+}
+
+@media  (max-width: 620px) {
+    .car h3{
+        font-size: 15px;
+    }
 }

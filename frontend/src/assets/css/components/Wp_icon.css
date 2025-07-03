@@ -16,3 +16,11 @@
 .wp_stycky:hover{
     transform: scale(1.1);
 }
+
+@media (max-width: 620px){
+    .icon_st{
+        position: fixed !important;
+        bottom: 70px !important;
+        right: -15px;
+    }
+}
