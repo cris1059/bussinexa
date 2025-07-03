@@ -13,4 +13,8 @@
         padding: 0;
         padding: 15px;
     }
+
+    .c_imgN{
+        display: none;
+    }
 }

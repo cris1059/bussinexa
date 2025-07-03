@@ -19,8 +19,7 @@
     font-style: normal;
 }
 
-html, body {
-}
+
 
 
 body{
@@ -132,6 +131,9 @@ h2{
 }
 
 @media (max-width: 620px){
+    html, body {
+    overflow-x: hidden;
+}
 
     body{
         
