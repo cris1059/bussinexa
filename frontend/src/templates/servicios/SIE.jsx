@@ -42,7 +42,7 @@ function SIE() {
 
   <div data-aos="zoom-in" className="apartado">
     <div className="leyenda">
-      <h2>Trámites COFEPRIS, SEMARNAT y código de barras (G51)</h2>
+      <h2>Trámites COFEPRIS, SEMARNAT y código de barras (GS1)</h2>
       <p>Gestionamos ante autoridades como COFEPRIS y SEMARNAT, así como el registro y obtención de códigos de barras, asegurando el cumplimiento normativo de tus productos.</p>
     </div>
     <img className="fade-static rigth" src={Dos} alt="Imagen desvanecida" />

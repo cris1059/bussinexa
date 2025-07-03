@@ -1,0 +1,181 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 70px;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.imagenesL{
+    display: flex;
+    width: 150;
+    height: 150px;
+}
+
+.modal-content img{
+    width: 150px;
+
+}
+
+.modal-content .producto{
+    border-radius: 50%;
+    margin: 5px 20px;
+}
+
+.imagenesL .logoM{
+    margin-left: 50px;
+}
+
+
+.modal-content h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.modal-content h5{
+    text-align: center;
+    font-size: 23px;
+}
+
+.modal-content h6{
+    margin-top: 10px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.modal-content ul{
+    background-color: #000;
+    padding: 20px;
+    border-radius: 9px;
+    list-style: disc;
+}
+
+.modal-content .btn_contac{
+    background-color: #000;
+    width: 300px;
+    margin:auto;
+    margin-top: 20px;
+    padding: 5px ;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    transform: translateY(50%);
+    transition: transform 0.3s ease; 
+}
+
+.modal-content .btn_contac:hover{
+    transform: translateY(40%) scale(1.0);
+    cursor: pointer;
+}
+
+.fleD{
+    display: flex;
+}
+
+.fleDC{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/*GENERAL*/
+
+.mermeBP{
+    background-color:var(--color-primario) ;
+    color: #fff;
+}
+
+.mermeBP ul{
+    background-color: #fff;
+    color: #000;
+}
+
+
+/*PRODUCTO MERMELADA
+
+.mermeBP{
+    background-color:#EF495F ;
+    color: #fff;
+}
+
+.mermeBP ul{
+    background-color: #F8DEAA;
+    color: #000;
+}
+*/
+
+/*PRODUCTO INCIENSO
+
+.incenBP{
+    background-color:#385321 ;
+    color: #fff;
+}
+
+.incenBP ul{
+    background-color: #EFDEE7;
+    color: #000;
+}
+    */
+
+    @media (max-width: 620px){
+    .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 0 !important;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+}

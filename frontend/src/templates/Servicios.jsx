@@ -19,7 +19,7 @@ function Servicios() {
         desc: [
   "• Consultoría en aspectos financieros, administrativos y legales.",
   "• Asesoría para trámites de apertura de negocios",
-  "• Trámites COFEPRIS, SEMARNAT, Código de barras (G51)",
+  "• Trámites COFEPRIS, SEMARNAT, Código de barras (GS1)",
   "• Protección patronal y revisión de Reglamento Interior de Trabajo",
   "• Diseño de cartera de clientes nacionales e internacionales"
 ],
@@ -31,7 +31,7 @@ link: "/servicios_empresariales",
       desc: [
   "• Consultoría en aspectos financieros, administrativos y legales.",
   "• Asesoría para trámites de apertura de negocios",
-  "• Trámites COFEPRIS, SEMARNAT, Código de barras (G51)",
+  "• Trámites COFEPRIS, SEMARNAT, Código de barras (GS1)",
   "• Protección patronal y revisión de Reglamento Interior de Trabajo",
   "• Diseño de cartera de clientes nacionales e internacionales",
   "• Plan de negocios",

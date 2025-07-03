@@ -21,4 +21,8 @@
     #areas-asesoria{
         padding: 15px;
     }
+
+        #areas-asesoria h2{
+            font-size: 30px;
+    }
 }

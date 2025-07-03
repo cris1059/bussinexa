@@ -109,6 +109,15 @@
 
 @media (max-width: 620px){
 
+    #quienes-somos, #mision, #servicios, #beneficios, #contacto, #empre{
+    
+    padding: 10px 10px !important;
+}
+
+.fond {
+    padding: 10px 10px !important;
+}
+
     .split-text-container {
     display: flex;
     font-size: 4rem;
@@ -127,7 +136,7 @@
     }
 
     .Fondoflecha{
-    top: 90px !important;
+    top: -70px !important;
     width: 250px !important;
     z-index: -10 !important;
 }

@@ -1,0 +1,47 @@
+
+.card-containe {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 950px;
+    margin: auto;
+}
+
+.car {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.car img{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    filter: brightness(0.3);
+}
+
+.car h3{
+    position: absolute;
+    z-index: 5;
+    font-size: 22px;
+    text-align: center;
+    top: 50%;
+    color: #fff;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease; 
+    width: 100%;
+    
+}
+
+.car:hover{
+    cursor: pointer;
+}
+
+.car:hover h3{
+    transform: translateY(-50%) scale(0.8); 
+}

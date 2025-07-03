@@ -1,4 +1,5 @@
 import '../assets/css/acerca.css';
+import '../assets/css/mision.css';
 import Somos from '../assets/img/somos.jpg';
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -41,7 +42,8 @@ function Acerca() {
   }, []);
 
   return (
-    <section id="quienes-somos">
+    <>
+      <section id="quienes-somos">
       <h2 data-aos="zoom-in">Acerca de nosotros</h2>
       <div className='quienes' data-aos="zoom-in">
 
@@ -80,6 +82,53 @@ function Acerca() {
 
       </div>
     </section>
+
+    <section id="mision">
+            <h2 data-aos="fade-right">Mision</h2>
+
+            <div className="quienes"  data-aos="fade-right">
+
+                
+        <div className="box carrusel relative">
+          <div className="c_img overflow-hidden rounded-xl">
+            <img
+              src={imagenes[indice]}
+              alt={`slide-${indice}`}
+              className={`transition-opacity duration-500 ease-in-out ${fade ? 'opacity-100' : 'opacity-0'}`}
+            />
+          </div>
+
+          {/* Botón Izquierdo */}
+          <button
+            onClick={retroceder}
+            className="absolute btnizq"
+          >
+            <ChevronLeft size={24} />
+          </button>
+
+          {/* Botón Derecho */}
+          <button
+            onClick={avanzar}
+            className="absolute btnder"
+          >
+            <ChevronRight size={24} />
+          </button>
+        </div>
+
+                <div className='box boxuno'>
+                    <p>
+                        Nuestra misión es ser el aliado estratégico que guía a emprendedores y empresas en su camino hacia el éxito, ofreciendo asesoramiento experto y estrategias a medida.
+                        Creemos en el poder del talento, la creatividad y la colaboración para transformar negocios y crear oportunidades sostenibles. <br />
+                        En Bussinexa, nos enorgullece ser parte del viaje empresarial de nuestros clientes, ayudándolos a superar desafíos, alcanzar sus metas y llevar sus proyectos al mercado.
+                        ¡Porque cuando nuestros clientes crecen, nosotros crecemos con ellos!
+                    </p>
+                </div>
+
+
+            </div>            
+
+        </section>
+    </>
   );
 }
 

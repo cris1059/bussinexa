@@ -47,3 +47,30 @@ margin: 25px 0;
 .texto-desplegable {
   overflow: hidden;
 }
+
+
+@media (max-width: 620px){
+
+    .exp{
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .exp .apartado{
+        width: 89px;
+    }
+
+    .texto-desplegable{
+        height: 250px;
+    }
+
+    .texto-desplegable h2{
+        font-size: 13px !important;
+        margin-top: 10px;
+    }
+
+    .texto-desplegable h3{
+    font-size: 10px !important;
+    margin-top: 10px;
+    }
+}

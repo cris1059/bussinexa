@@ -142,4 +142,11 @@ p{
     #servicios{
         padding: 15px;
     }
+
+    .img .circulo{
+    width: 150px;
+    height: 150px;
+    margin: 10px 10px;
+
+}
 }

@@ -1,0 +1,69 @@
+#empre{
+    background-color: #fff;
+}
+
+#empre h2{
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+
+}
+
+.card img{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    filter: brightness(0.3);
+}
+
+.card h3{
+    position: absolute;
+    z-index: 5;
+    font-size: 22px;
+    text-align: center;
+    top: 50%;
+    color: #fff;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease; 
+    width: 100%;
+    
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover h3{
+    transform: translateY(-50%) scale(0.8); 
+}
+
+
+@media (max-width: 620px){
+
+    .card {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: relative;
+
+    }
+
+    .card h3{
+        font-size: 15px;
+    }
+
+}

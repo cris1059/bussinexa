@@ -8,7 +8,7 @@ import './assets/css/style.css';
 import Home from './templates/Home';
 import Presentation from './templates/Presentation';
 import Acerca from './templates/Acerca';
-import Mision from './templates/Mision';
+import Empre from './templates/Emprendimientos';
 import Servicios from './templates/Servicios';
 import Asesorias from './templates/servicios/Asesorias';
 import Beneficios from './templates/Beneficios';
@@ -33,8 +33,8 @@ function Navbar() {
           <Link to="home" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Inicio</Link>
           <Link to="servicios" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Servicios</Link>
           <Link to="beneficios" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Beneficios</Link>
+          <Link to="empre" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Emprendimientos</Link>
           <Link to="quienes-somos" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Acerca</Link>
-          <Link to="mision" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Misión</Link>
           {/*<Link to="areas-asesoria" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Asesoria</Link>*/}
           <Link to="contacto" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Contacto</Link>
           
@@ -66,8 +66,8 @@ function App() {
                 <Exp />
                 <Servicios />
                 <Beneficios />
+                <Empre />
                 <Acerca />
-                <Mision />
                 <Contacto />
                 <Footer />
               </div>

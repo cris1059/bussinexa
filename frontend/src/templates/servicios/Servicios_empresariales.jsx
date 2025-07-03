@@ -48,8 +48,8 @@ function Servicios_empresariales() {
             <div data-aos="zoom-in" className="apartado">
                 <img className="fade-static left" src={Tres} alt="Imagen desvanecida" />
                 <div className="leyenda">
-                    <h2>Trámites COFEPRIS, SEMARNAT, Código de barras (G51)</h2>
-                    <p>Gestionamos ante autoridades como COFEPRIS y SEMARNAT, además de realizar el registro y obtención de códigos de barras (G51), asegurando cumplimiento regulatorio para productos o servicios.</p>
+                    <h2>Trámites COFEPRIS, SEMARNAT, Código de barras (GS1)</h2>
+                    <p>Gestionamos ante autoridades como COFEPRIS y SEMARNAT, además de realizar el registro y obtención de códigos de barras (GS1), asegurando cumplimiento regulatorio para productos o servicios.</p>
                 </div>
             </div>
 

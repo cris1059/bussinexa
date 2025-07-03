@@ -39,7 +39,7 @@ function Contacto() {
 
     return (
         <section id="contacto">
-            <h2 data-aos="fade-right">Contacto</h2>
+            <h2 data-aos="fade-right">Agende una video consulta sin costo</h2>
             <div data-aos="fade-right" className="contacto">
                 <div className="redes-sociales">
                     <h3>Redes Sociales</h3>

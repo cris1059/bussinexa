@@ -1,5 +1,6 @@
 #mision{
-    background-color: #fff;
+    background-color: var(--color-primario);
+    color: #fff;
 }
 
 .boxmision img{

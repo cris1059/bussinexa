@@ -38,3 +38,33 @@
 #Servicio .rigth{
     mask-image: linear-gradient(to left, black 1%, transparent 100%);
 }
+
+
+@media (max-width: 620px){
+
+    #Servicio{
+        padding: 5px;
+    }
+
+    #Servicio .left{
+        display: none;
+}
+
+    #Servicio .rigth{
+        display: none;
+}
+
+    #Servicio .apartado{
+        padding: 0;
+}
+
+.leyenda h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.leyenda p{
+    font-size: 20px;
+}
+
+}
