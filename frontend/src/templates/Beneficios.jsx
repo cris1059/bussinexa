@@ -11,7 +11,7 @@ function Beneficios() {
 
     return (
         <section id="beneficios"> 
-            <h2 data-aos="fade-left">Beneficios</h2>
+            <h2 data-aos="zoom-in">Beneficios</h2>
             
                 <div className="quienes" data-aos="fade-left">
     
