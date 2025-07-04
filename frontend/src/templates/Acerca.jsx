@@ -1,5 +1,6 @@
 import '../assets/css/acerca.css';
 import '../assets/css/mision.css';
+import '../assets/css/videos.css';
 import Somos from '../assets/img/somos.jpg';
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -9,6 +10,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Imagen2 from '../assets/img/carrusel2.jpg';
 import Imagen3 from '../assets/img/carrusel3.jpg';
+
+import Image1 from '../assets/img/Mision1.jpg';
+import Image2 from '../assets/img/mision2.jpg';
+import Image3 from '../assets/img/mision3.jpg';
+
+const imagenes2 = [Image1, Image2, Image3];
 
 const imagenes = [Somos, Imagen2, Imagen3];
 
@@ -92,7 +99,7 @@ function Acerca() {
         <div className="box carrusel relative">
           <div className="c_img c_imgN overflow-hidden rounded-xl">
             <img
-              src={imagenes[indice]}
+              src={imagenes2[indice]}
               alt={`slide-${indice}`}
               className={`transition-opacity duration-500 ease-in-out ${fade ? 'opacity-100' : 'opacity-0'}`}
             />
@@ -126,6 +133,34 @@ function Acerca() {
 
 
             </div>            
+
+        </section>
+
+        <section id='videos'>
+          <div className="seccion_video">
+            <div className="part">
+              <video controls>
+                <source src="/videos/5 TIPOS.mp4" type="video/mp4" />
+                Tu navegador no soporta el elemento de video.
+              </video>
+            </div>
+            <div className="part">
+              <h2>¿Pensando en importar desde China?</h2>
+              <p>En este video descubrirás 5 tips que te ayudarán a hacerlo de forma más segura, eficiente y rentable. Desde cómo elegir proveedores confiables hasta evitar errores comunes que podrían costarte caro. ¡Ideal si estás por iniciar tu negocio o quieres mejorar tus importaciones!</p>
+            </div>    
+          </div>
+          <div className="seccion_video">
+            <div className="part">
+              <h2>¿Por qué debes contar con títulos accionarios?</h2>
+              <p>Los títulos accionarios respaldan legalmente tu participación en una empresa. Te dan derechos, protegen tu inversión y facilitan el crecimiento con seguridad y claridad.</p>
+            </div>  
+            <div className="part">
+              <video controls>
+                <source src="/videos/12A.mp4" type="video/mp4" />
+                Tu navegador no soporta el elemento de video.
+              </video>
+            </div>
+          </div>
 
         </section>
     </>
