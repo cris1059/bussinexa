@@ -9,7 +9,8 @@
     justify-content: center;
 }
 
-.seccion_video video{
+.seccion_video iframe{
+    
     width: 100%;
     max-width: 550px; 
     border-radius: 25px;
@@ -36,4 +37,19 @@
     .part p{
         font-size: 15px;
     }
+
+    .seccion_video iframe{
+    
+    width: 100%;
+    max-width: 550px; 
+    height: 200px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #000;
+}
+
+.seccion_video .part{
+    width: 550px;
+    padding: 25px;
+}
+
 }

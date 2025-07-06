@@ -1,6 +1,7 @@
 import '../assets/css/acerca.css';
 import '../assets/css/mision.css';
 import '../assets/css/videos.css';
+import '../assets/css/fundadores.css';
 import Somos from '../assets/img/somos.jpg';
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -14,6 +15,8 @@ import Imagen3 from '../assets/img/carrusel3.jpg';
 import Image1 from '../assets/img/Mision1.jpg';
 import Image2 from '../assets/img/mision2.jpg';
 import Image3 from '../assets/img/mision3.jpg';
+
+import Fund from "../assets/img/FUNDACION.png";
 
 const imagenes2 = [Image1, Image2, Image3];
 
@@ -50,6 +53,16 @@ function Acerca() {
 
   return (
     <>
+      <section id="fundadores">
+        <h2 data-aos="zoom-in">Fundadores</h2>
+        <img data-aos="zoom-in" className='img_fundadores' src={Fund} alt="" />
+        <div data-aos="zoom-in" className='name_fundadores'>
+          <h3>Javier Nava Vega</h3>
+          <h3>Mirna Rotstein Faias</h3>
+        </div>
+
+      </section>
+
       <section id="quienes-somos">
       <h2 data-aos="zoom-in">Acerca de nosotros</h2>
       <div className='quienes' data-aos="zoom-in">
@@ -139,10 +152,15 @@ function Acerca() {
         <section id='videos'>
           <div className="seccion_video">
             <div className="part">
-              <video controls>
-                <source src="/videos/5 TIPOS.mp4" type="video/mp4" />
-                Tu navegador no soporta el elemento de video.
-              </video>
+              <iframe
+                height="315"
+                src="https://www.youtube-nocookie.com/embed/-KvX39M56Kw?rel=0"
+                title="YouTube video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+
+
             </div>
             <div className="part">
               <h2>¿Pensando en importar desde China?</h2>
@@ -155,10 +173,13 @@ function Acerca() {
               <p>Los títulos accionarios respaldan legalmente tu participación en una empresa. Te dan derechos, protegen tu inversión y facilitan el crecimiento con seguridad y claridad.</p>
             </div>  
             <div className="part">
-              <video controls>
-                <source src="/videos/12A.mp4" type="video/mp4" />
-                Tu navegador no soporta el elemento de video.
-              </video>
+              <iframe
+                height="315"
+                src="https://www.youtube-nocookie.com/embed/7jKx68aA52w?rel=0"
+                title="YouTube video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
 

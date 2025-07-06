@@ -1,0 +1,42 @@
+#fundadores{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primario);
+    color: #fff;
+}
+
+.img_fundadores{
+    width: 500px;
+    margin: auto;
+    filter: drop-shadow(5px 5px 10px #000);
+}
+
+.name_fundadores{
+    padding: 50px 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+    @media (max-width: 620px){
+    #fundadores{
+        padding: 0;
+    }
+
+    #fundadores h2{
+        margin: 40px 0;
+    }
+
+    .img_fundadores{
+        padding: 0 100px;
+    }
+
+    .name_fundadores{
+        gap: none;
+    }
+
+    .name_fundadores h3{
+        font-size: 13px;
+    }
+}
