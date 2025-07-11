@@ -68,7 +68,7 @@ Su enfoque combina la planeación estratégica, el diseño de planes de negocio 
           </div>
           <div data-aos="zoom-in" className="semblanza">   
             <img src={fund1} data-aos="zoom-in" className='img_fundadores img_fund' alt="" />        
-            <h3>Mirna Rotstein Faias</h3> <br/>
+            <h3>Mirna Rotstein Farías</h3> <br/>
             <p>Especialista en Finanzas, Docente y Consultora Empresarial
 Licenciada y Maestra en Economía así como Maestra en Finanzas Corporativas por la UNAM. 
 Profesora de la Universidad Nacional Autónoma de México y de la Universidad Autónoma del Estado de México.</p>
