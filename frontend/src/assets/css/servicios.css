@@ -173,4 +173,9 @@ p{
 #servicios h2{
     font-size: 25px;
 }
+
+.curso-activo .video{
+    width: 300px;
+}
+
 }
