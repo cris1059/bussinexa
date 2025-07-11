@@ -28,7 +28,7 @@ function Asesorias() {
                 
                                 <div className='box boxuno'>
                                     <h3 className='subtitle about_subtitle'>¿En qué áreas brindamos asesoría?</h3>
-                                    <p>
+                                    <p className="parrafoAs">
                                         En Bussinexa, ofrecemos un acompañamiento integral en las siguientes áreas clave para el desarrollo empresarial:
                                     </p>
                                     <ol className='listaordenada'>
@@ -77,8 +77,9 @@ function Asesorias() {
                                     </ol>
                                 </div>
                             </div>
-                            <Wp />
+                            
             </section>
+            <Wp />
             <Ft />
         </>
     )

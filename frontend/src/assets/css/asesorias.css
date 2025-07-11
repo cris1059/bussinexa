@@ -1,6 +1,9 @@
 #areas-asesoria{
     background-color: #fff;
-    padding: 15px 50px;
+    padding: 15px 80px;
+    width: 75%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 .listaordenada{
@@ -15,6 +18,10 @@
 
 .sublista li {
     list-style: circle;
+}
+
+.parrafoAs{
+    width: 450px;
 }
 
 @media (max-width: 620px){
