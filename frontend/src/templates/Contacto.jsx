@@ -43,7 +43,7 @@ function Contacto() {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch("https://formsubmit.co/contactoconsultoria@bussinexa.com", {
+      const response = await fetch("https://formsubmit.co/942bb3077498acba14f2b90a10b5785f", {
         method: "POST",
         body: formData,
       });
