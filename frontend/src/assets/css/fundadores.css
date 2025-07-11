@@ -6,9 +6,21 @@
 }
 
 .img_fundadores{
-    width: 500px;
-    margin: auto;
+    max-width: 360px;
+    margin: 50px auto;
     filter: drop-shadow(5px 5px 10px #000);
+}
+
+.fundadores{
+    display: flex;
+}
+
+.img_fund{
+    width: 325px;
+}
+
+.semblanza{
+    width: 50%;
 }
 
 .name_fundadores{
@@ -16,7 +28,12 @@
     padding-bottom: 0;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 60px;
+}
+
+.semblanzaul{
+    list-style: circle;
+    margin-left: 20px;
 }
 
     @media (max-width: 620px){
@@ -30,13 +47,40 @@
 
     .img_fundadores{
         padding: 0 100px;
+        margin: 20px;
+        padding: 0 50px;
     }
 
     .name_fundadores{
         gap: none;
+        display: flex;
+        flex-direction: column;
     }
 
     .name_fundadores h3{
         font-size: 13px;
     }
+
+    .semblanza{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .semblanza h3{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .semblanza p{
+        width: 350px;
+        margin: auto;
+    }
+
+    .semblanzaul{
+    list-style: circle;
+    width: 350px;
+    margin-left: 25px;
+}
 }

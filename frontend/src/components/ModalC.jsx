@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../assets/css/modal_dos.css";
 import { HashLink } from "react-router-hash-link";
 
-function ModalC({ isOpen, onClose, titulo, subtitulo, tiempo, texto, img, lista }) {
+function ModalC({ isOpen, onClose, titulo, subtitulo, tiempo, texto, lista }) {
   
   
   useEffect(() => {

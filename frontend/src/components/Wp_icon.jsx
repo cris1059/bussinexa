@@ -6,7 +6,7 @@ function wp_icon() {
     
 
     return (
-        <div className="icon_st">
+        <div data-aos="zoom-in" className="icon_st">
             <a className="wp_stycky" href="https://wa.me/5513697365">
                 <img src={Wp} alt="Icono WhatsApp" />
             </a>

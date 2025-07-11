@@ -19,6 +19,8 @@ import SE from "./templates/servicios/Servicios_empresariales";
 import SIE from "./templates/servicios/SIE";
 import Cursos from "./templates/servicios/Cursos";
 
+import Wp from "./components/Wp_icon";
+
 
 
 function Navbar() {
@@ -69,6 +71,8 @@ function App() {
                 <Empre />
                 <Acerca />
                 <Contacto />
+                
+                <Wp />
                 <Footer />
               </div>
             </>

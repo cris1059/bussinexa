@@ -44,12 +44,12 @@ function Experiencia() {
             <Apartado
                 img={Exp}
                 titulo="Nuestra historia"
-                subtitulo="Más de 20 años apoyando el emprendimiento mexicano."
+                subtitulo="Con 20 años apoyando el emprendimiento mexicano."
             />
             <Apartado
                 img={Sol}
                 titulo="Servicios"
-                subtitulo="Estrategias integrales para innovación y crecimiento."
+                subtitulo="Estrategias integrales para innovación, crecimiento sostenible y liderazgo."
             />
             <Apartado
                 img={Res}

@@ -3,7 +3,7 @@
     color: #fff;
 }
 
-p{
+p, ul{
     text-align: justify;
     font-size: 20px;
 }
@@ -22,6 +22,10 @@ p{
 
 .quienes .box{
     margin-right: 70px;
+}
+
+.boxuno{
+    margin-right: 0 !important;
 }
 
 .quienes img{

@@ -82,7 +82,7 @@ link: "/cursos"
 
   return (
     <section id="servicios">
-      <h2 data-aos="zoom-in">Impulsa tu Negocio con Nuestros Servicios Especializados</h2>
+      <h2 data-aos="zoom-in">Impulsa tu negocio con nuestros servicios especializados</h2>
       <div data-aos="zoom-in" className='content_catalogo'>
 
       <div className='iconosS'>

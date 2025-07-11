@@ -34,8 +34,8 @@ function Presentation() {
           <img src={Whatsicon} alt="" className="iconR" />
         </a>
         <a onClick={() => {
-          navigator.clipboard.writeText('contacto@javiernavaconsultor.com');
-          alert('Correo copiado al portapapeles');
+          navigator.clipboard.writeText('contactoconsultoria@bussinexa.com');
+          alert('Correo copiado');
         }}>
           <img src={Emailicon} alt="Copiar correo" className="iconR cursor-pointer" />
         </a>

@@ -20,29 +20,29 @@ function Beneficios() {
                             <div className='img'>
                                 <img src={Capc} alt="" />
                             </div>
-                            <h2>Capacitación</h2>
-                            <h4>Desarrollamos habilidades gerenciales y operativas para emprendedores, directivos y personal clave.</h4>
+                            <h2>Mayor probabilidad<br/> de éxito</h2>
+                            <h4>La asesoría profesional brinda a los emprendedores una base sólida para construir negocios exitosos. Recibir orientación desde las etapas iniciales permite tomar decisiones más acertadas, evitar errores comunes y enfocar los recursos de manera estratégica. Este acompañamiento experto incrementa notablemente las posibilidades de consolidar un proyecto viable y competitivo en el mercado actual.</h4>
                         </div>
                         <div className='apartado'>
                             <div className='img'>
                                 <img src={Soluc} alt="" />
                             </div>
-                            <h2>Soluciones Personalizadas</h2>
-                            <h4>Cada empresa es única. Por eso, nuestras estrategias se adaptan a las características y necesidades de cada cliente.</h4>
+                            <h2>Eficiencia operativa<br/> y optimización de procesos</h2>
+                            <h4>Para empresas en funcionamiento, la consultoría representa una herramienta clave para mejorar su desempeño interno. Al contar con la visión objetiva de especialistas, es posible detectar fallas, reducir costos y perfeccionar procesos. La intervención profesional permite que las organizaciones funcionen de forma más ágil, rentable y alineada con sus objetivos estratégicos, generando mejoras visibles en corto plazo.</h4>
                         </div>
                         <div className='apartado'>
                             <div className='img'>
                                 <img src={Cont} alt="" />
                             </div>
-                            <h2>Red de Contactos</h2>
-                            <h4>Ofrecemos acceso a una red de expertos, instituciones y aliados en distintas industrias.</h4>
+                            <h2>Impulso al crecimiento <br/> y rentabilidad empresarial</h2>
+                            <h4>Las empresas que invierten en asesoría externa suelen experimentar un aumento significativo en sus ingresos, la captación de nuevos clientes y la consolidación de su posición en el mercado. Gracias al diseño e implementación de estrategias personalizadas, logran adaptarse mejor a las demandas del entorno, fidelizar clientes y fortalecer su estructura comercial de forma sostenible y rentable.</h4>
                         </div>
                         <div className='apartado'>
                             <div className='img'>
                                 <img src={Res} alt="" />
                             </div>
-                            <h2>Resultados Reales</h2>
-                            <h4>Trabajamos con enfoque práctico, orientados a generar resultados tangibles y medibles en cada etapa del proyecto.</h4>
+                            <h2>Ventaja competitiva <br/> e innovación constante</h2>
+                            <h4>La asesoría fomenta una mentalidad de mejora continua que impulsa la innovación dentro de la empresa. Al trabajar con consultores, las organizaciones adoptan nuevas tecnologías más rápidamente, toman decisiones con mayor agilidad y alinean mejor sus estrategias con los objetivos a largo plazo. Esto les permite mantenerse competitivas, adaptarse con éxito a los cambios del entorno y asegurar un crecimiento sostenido.</h4>
                         </div>
                     </div>
     

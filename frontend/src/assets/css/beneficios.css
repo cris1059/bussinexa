@@ -11,12 +11,13 @@
 .benef{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .benef .apartado{
     color: #fff;
-    width: 220px;
-    margin: 0 15px;
+    width: 420px;
+    margin: 15px;
     background-color: var(--color-primario);
     border-radius: 12px;
     box-shadow: 0 0 10px #000;
@@ -67,7 +68,7 @@
     
     .benef .apartado{
         color: #fff;
-        width: 185px;
+        width: 360px;
         margin: 05px;
     }
 

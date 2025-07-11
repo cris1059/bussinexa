@@ -48,14 +48,14 @@ function Servicios_empresariales() {
             <div data-aos="zoom-in" className="apartado">
                 <img className="fade-static left" src={Tres} alt="Imagen desvanecida" />
                 <div className="leyenda">
-                    <h2>Trámites COFEPRIS, SEMARNAT, Código de barras (GS1)</h2>
+                    <h2>Trámites COFEPRIS, SEMARNAT, código de barras (GS1)</h2>
                     <p>Gestionamos ante autoridades como COFEPRIS y SEMARNAT, además de realizar el registro y obtención de códigos de barras (GS1), asegurando cumplimiento regulatorio para productos o servicios.</p>
                 </div>
             </div>
 
             <div data-aos="zoom-in" className="apartado">
                 <div className="leyenda">
-                    <h2>Protección patronal y revisión de Reglamento Interior de Trabajo</h2>
+                    <h2>Protección patronal y revisión de reglamento interior de trabajo</h2>
                     <p>Elaboramos o revisamos tu Reglamento Interior de Trabajo, asegurando que cumpla con la Ley Federal del Trabajo y proteja los derechos tanto de la empresa como del trabajador, minimizando riesgos laborales.
 Fundamental para empresas que buscan relaciones laborales seguras y bien reguladas.</p>
                 </div>

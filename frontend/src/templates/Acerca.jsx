@@ -16,7 +16,8 @@ import Image1 from '../assets/img/Mision1.jpg';
 import Image2 from '../assets/img/mision2.jpg';
 import Image3 from '../assets/img/mision3.jpg';
 
-import Fund from "../assets/img/FUNDACION.png";
+import Fund from "../assets/img/javierNava.png";
+import fund1 from "../assets/img/Mtra_Rotstein.png";
 
 const imagenes2 = [Image1, Image2, Image3];
 
@@ -55,10 +56,29 @@ function Acerca() {
     <>
       <section id="fundadores">
         <h2 data-aos="zoom-in">Fundadores</h2>
-        <img data-aos="zoom-in" className='img_fundadores' src={Fund} alt="" />
         <div data-aos="zoom-in" className='name_fundadores'>
-          <h3>Javier Nava Vega</h3>
-          <h3>Mirna Rotstein Faias</h3>
+          <div data-aos="zoom-in" className='semblanza'>
+            <img data-aos="zoom-in" className='img_fundadores' src={Fund} alt="" />
+            <h3>Javier Nava Vega</h3> <br/>
+            <p>Consultor en Desarrollo Empresarial y Fortalecimiento de Empresas Sociales
+Licenciado y Maestra en Economía por la UNAM. 
+Profesor de la Universidad Nacional Autónoma de México.
+Consultor especializado en el diseño, acompañamiento y fortalecimiento de modelos empresariales sostenibles, especialmente en comunidades rurales y empresas sociales. A lo largo de su carrera, ha brindado asesoría a proyectos productivos en más de 20 estados de la República Mexicana, consolidando más de 40 empresas en sectores como el forestal, agroindustrial, turístico, comercial y de servicios, entre otras.
+Su enfoque combina la planeación estratégica, el diseño de planes de negocio y la capacitación empresarial,  con el propósito de crear empresas sólidas, rentables y con impacto social. </p>
+          </div>
+          <div data-aos="zoom-in" className="semblanza">   
+            <img src={fund1} data-aos="zoom-in" className='img_fundadores img_fund' alt="" />        
+            <h3>Mirna Rotstein Faias</h3> <br/>
+            <p>Especialista en Finanzas, Docente y Consultora Empresarial
+Licenciada y Maestra en Economía así como Maestra en Finanzas Corporativas por la UNAM. 
+Profesora de la Universidad Nacional Autónoma de México y de la Universidad Autónoma del Estado de México.</p>
+<ul className='semblanzaul'>
+  <li>Se enfoca en combinar rigor cuantitativo, comprensión del entorno macroeconómico y aplicación de herramientas globales.</li>
+  <li>Orienta su consultoría a fortalecer capacidades internas, promoviendo que las empresas desarrollen autonomía financiera y mejores prácticas en gobernanza y gestión de riesgos.</li>
+  <li>Impulsa a sus clientes a desarrollarse con visión global, resiliencia económica y valores éticos.</li>
+</ul>
+	
+          </div>
         </div>
 
       </section>
