@@ -137,6 +137,26 @@ p{
     cursor: pointer;
 }
 
+.curso-activo .video, .titlevideo{
+    width: 520px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.curso-activo .video{
+    width: 400px;
+}
+
+.video iframe{
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+}
+
+.curso-activo{
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 @media (max-width: 620px){
     #servicios{
