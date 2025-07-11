@@ -98,7 +98,7 @@ function Contacto() {
           <form onSubmit={handleSubmit}>
             <input name="Nombre" type="text" placeholder="Nombre*" required />
             <input name="E-mail" type="email" placeholder="E-Mail*" required />
-            <input name="Telefono" type="text" placeholder="Teléfono*" required />
+            <input name="Telefono" type="number" placeholder="Teléfono*" required />
             <textarea name="Comentario" placeholder="Comentarios*" required />
             <input className="none" type="text" name="_honey" />
             <input type="hidden" name="_captcha" value="false" />
