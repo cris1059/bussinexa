@@ -35,7 +35,7 @@ function Beneficios() {
                                 <img src={Cont} alt="" />
                             </div>
                             <h2>Impulso al crecimiento <br/> y rentabilidad empresarial</h2>
-                            <h4>Las empresas que invierten en asesoría externa suelen experimentar un aumento significativo en sus ingresos, la captación de nuevos clientes y la consolidación de su posición en el mercado. Gracias al diseño e implementación de estrategias personalizadas, logran adaptarse mejor a las demandas del entorno, fidelizar clientes y fortalecer su estructura comercial de forma sostenible y rentable.</h4>
+                            <h4>Las empresas que recurren a consultoría externa suelen ver un aumento del 26 % en ingresos anuales y una reducción del 20 % en costos operativos durante el primer año. También adoptan nuevas tecnologías un 65 % más rápido y mejoran su cuota de mercado en un 18 %. Además, incrementan en un 30 % la retención de clientes, toman decisiones más ágiles y logran una mayor alineación estratégica, lo que mejora su capacidad de adaptación en entornos competitivos.</h4>
                         </div>
                         <div className='apartado'>
                             <div className='img'>

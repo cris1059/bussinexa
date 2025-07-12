@@ -39,7 +39,7 @@ margin: 25px 0;
 .texto-desplegable h2,
 .texto-desplegable h3 {
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
   opacity: 1;
   transition: opacity 0.5s ease;
 }
