@@ -1,4 +1,4 @@
-
+import "../assets/css/components/btn_back.css";
 
 function Btn_back() {
 

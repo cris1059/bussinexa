@@ -26,10 +26,25 @@
 
 @media (max-width: 620px){
     #areas-asesoria{
+        border-radius: 0;
         padding: 15px;
+        width: 100%;
     }
 
-        #areas-asesoria h2{
+    #areas-asesoria h2{
             font-size: 30px;
+    }
+
+    #areas-asesoria .boxuno{
+        width: 90%;
+        margin: 0 !important;
+    }
+
+    #areas-asesoria .parrafoAs{
+        width: 100%;
+    }
+
+    #areas-asesoria .listaordenada li{
+        width: 107%;
     }
 }

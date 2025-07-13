@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import '../assets/css/servicios.css';
+import "../assets/css/components/btn_back.css";
 import Serv from "../assets/img/catalogo/servicios.jpg";
 import Prod from "../assets/img/catalogo/productos.jpg";
 import Ases from "../assets/img/catalogo/asesoria.jpg";
@@ -61,7 +62,7 @@ useEffect(() => {
 link: "/servicios_empresariales",
     },
     {
-      title: "Soluciones Integrales para Empresas",
+      title: "Soluciones para Empresas",
       img: Prod,
       desc: [
   "• Consultoría en aspectos financieros, administrativos y legales.",

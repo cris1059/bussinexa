@@ -2,6 +2,7 @@ import Pre from "../Presentation";
 import Ft from "../Footer";
 import Wp from "../../components/Wp_icon";
 import Sc from "../../components/ScrollToTop";
+import { useNavigate } from 'react-router-dom';
 
 import "../../assets/css/servicios/SE.css";
 import Uno from "../../assets/img/servicios/SE/SE.jpg";
@@ -9,69 +10,64 @@ import Dos from "../../assets/img/servicios/SE/AT.jpg";
 import Tres from "../../assets/img/servicios/SE/SE2.jpg";
 import Cuatro from "../../assets/img/servicios/SE/SE3.jpg";
 import Cinco from "../../assets/img/servicios/SE/SE4.jpg";
-import { useNavigate } from 'react-router-dom';
-import "../../assets/css/components/btn_back.css";
 
 function Servicios_empresariales() {
-    
-        const navigate = useNavigate();
-
+    const navigate = useNavigate();
     const Navegar = () => {
         navigate(-1);
         console.log("Volviendo a la página anterior");
-
     }
 
     return (
         <>
-        <Sc />
-        < Pre/>
-        <section id="Servicio">
-            <button className="btn_volver" onClick={Navegar}>Volver</button>
+            <Sc />
+            <Pre />
+            <section id="Servicio">
+                <button className="btn_volver" onClick={Navegar}>Volver</button>
 
-            <div data-aos="zoom-in" className="apartado">
-                <img className="fade-static left" src={Uno} alt="Imagen desvanecida" />
-                <div className="leyenda">
-                    <h2>Consultoría en aspectos financieros, administrativos y legales</h2>
-                    <p>Brindamos asesoría integral que combina planificación financiera, optimización de procesos administrativos y soporte legal para garantizar una gestión empresarial sólida y conforme a la normativa.</p>
+                <div data-aos="zoom-in" className="apartado">
+                    <img className="fade-static left" src={Uno} alt="Consultoría" />
+                    <div className="leyenda">
+                        <h2>Consultoría financiera, <br/> administrativa y legal</h2>
+                        <p>Asesoría integral para una gestión empresarial eficiente, combinando estrategias financieras, control administrativo y cumplimiento legal.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div data-aos="zoom-in" className="apartado">
-                <div className="leyenda">
-                    <h2>Asesoría para trámites de apertura de negocios</h2>
-                    <p> Acompañamos paso a paso la creación legal de tu empresa: constitución, obtención de licencias, registro fiscal y trámites municipales, asegurando un inicio rápido y sin contratiempos.</p>
+                <div data-aos="zoom-in" className="apartado">
+                    <div className="leyenda">
+                        <h2>Asesoría para trámites de <br/> apertura de negocios</h2>
+                        <p>Desde la constitución legal hasta licencias y registros fiscales. Facilitamos todo el proceso para arrancar operaciones sin complicaciones.</p>
+                    </div>
+                    <img className="fade-static rigth" src={Dos} alt="Trámites" />
                 </div>
-                <img className="fade-static rigth" src={Dos} alt="Imagen desvanecida" />
-            </div>
 
-            <div data-aos="zoom-in" className="apartado">
-                <img className="fade-static left" src={Tres} alt="Imagen desvanecida" />
-                <div className="leyenda">
-                    <h2>Trámites COFEPRIS, SEMARNAT, código de barras (GS1)</h2>
-                    <p>Gestionamos ante autoridades como COFEPRIS y SEMARNAT, además de realizar el registro y obtención de códigos de barras (GS1), asegurando cumplimiento regulatorio para productos o servicios.</p>
+                <div data-aos="zoom-in" className="apartado">
+                    <img className="fade-static left" src={Tres} alt="Protección laboral" />
+                    <div className="leyenda">
+                        <h2>Protección patronal y <br/> reglamento interior</h2>
+                        <p>Revisamos y elaboramos reglamentos laborales conforme a la Ley Federal del Trabajo, previniendo conflictos y protegiendo a tu empresa.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div data-aos="zoom-in" className="apartado">
-                <div className="leyenda">
-                    <h2>Protección patronal y revisión de reglamento interior de trabajo</h2>
-                    <p>Elaboramos o revisamos tu Reglamento Interior de Trabajo, asegurando que cumpla con la Ley Federal del Trabajo y proteja los derechos tanto de la empresa como del trabajador, minimizando riesgos laborales.
-Fundamental para empresas que buscan relaciones laborales seguras y bien reguladas.</p>
+                <div data-aos="zoom-in" className="apartado">
+                    <div className="leyenda">
+                        <h2>Soporte legal para <br/> relaciones laborales</h2>
+                        <p>Atención a conflictos, despidos, contratos laborales y cumplimiento de obligaciones patronales. Evita sanciones y resuelve contingencias.</p>
+                    </div>
+                    <img className="fade-static rigth" src={Cuatro} alt="Soporte legal" />
                 </div>
-                <img className="fade-static rigth" src={Cuatro} alt="Imagen desvanecida" />
-            </div>
 
-            <div data-aos="zoom-in" className="apartado">
-                <img className="fade-static left" src={Cinco} alt="Imagen desvanecida" />
-                <div className="leyenda">
-                    <h2>Diseño de cartera de clientes nacionales e internacionales</h2>
-                    <p>Definimos y estructuramos tu cartera de clientes, identificando mercados objetivo, diseñando estrategias de captación y fidelización tanto a nivel nacional como internacional.</p>
+                <div data-aos="zoom-in" className="apartado">
+                    <img className="fade-static left" src={Cinco} alt="Cartera de clientes" />
+                    <div className="leyenda">
+                        <h2>Diseño de cartera de <br/> clientes estratégicos</h2>
+                        <p>Definimos perfiles de cliente ideal y estrategias para atraerlos y fidelizarlos, con enfoque nacional y regional.</p>
+                    </div>
                 </div>
-            </div>
-        <Wp />
-        </section>
-        <Ft />
+
+                <Wp />
+            </section>
+            <Ft />
         </>
     )
 }
