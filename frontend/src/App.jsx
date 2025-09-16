@@ -18,6 +18,8 @@ import Exp from "./templates/Experiencia";
 import SE from "./templates/servicios/Servicios_empresariales";
 import SIE from "./templates/servicios/SIE";
 import Cursos from "./templates/servicios/Cursos";
+import ServiciosAduaneros from "./templates/servicios/ServiciosAduaneros";
+import ModalPromoAduanero from "./components/ModalPromoAduanero";
 
 import Wp from "./components/Wp_icon";
 
@@ -61,6 +63,7 @@ function App() {
           path="/"
           element={
             <>
+              <ModalPromoAduanero />
               <Presentation />
               <Navbar />
               <div className="content_home">
@@ -81,6 +84,7 @@ function App() {
         <Route path="/servicios_empresariales" element={<SE />} />
         <Route path="/soluciones_integrales_para_empresas" element={<SIE />} />
         <Route path="/asesoria_especializada" element={<Asesorias />} />
+        <Route path="/servicios_aduaneros" element={<ServiciosAduaneros />} />
         <Route path="/cursos" element={<Cursos />} />
       </Routes>
     </Router>

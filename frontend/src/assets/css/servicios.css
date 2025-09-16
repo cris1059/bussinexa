@@ -43,10 +43,16 @@ p{
 
 .iconosS{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
 .iconosS .grupo{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 
@@ -63,8 +69,12 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 25px;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
 
+.img .circulo:hover {
+    transform: scale(1.05);
 }
 
 
@@ -158,24 +168,39 @@ p{
 }
 
 
+@media (max-width: 768px){
+    .iconosS .grupo{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .img .circulo{
+        width: 180px;
+        height: 180px;
+        margin: 10px;
+    }
+}
+
 @media (max-width: 620px){
     #servicios{
         padding: 15px;
     }
 
     .img .circulo{
-    width: 150px;
-    height: 150px;
-    margin: 10px 10px;
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+    }
 
-}
+    #servicios h2{
+        font-size: 25px;
+    }
 
-#servicios h2{
-    font-size: 25px;
-}
+    .curso-activo .video{
+        width: 300px;
+    }
 
-.curso-activo .video{
-    width: 300px;
-}
-
+    .circulo h5{
+        font-size: 16px;
+    }
 }

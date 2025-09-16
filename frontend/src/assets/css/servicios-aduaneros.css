@@ -1,0 +1,169 @@
+#servicios-aduaneros {
+    background-color: #fff;
+    padding: 15px 80px;
+    width: 87%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.parrafoSA {
+    width: 450px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.servicio-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #007bff;
+}
+
+.servicio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.servicio-card h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.lista-servicios {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-servicios li {
+    padding: 8px 0;
+    padding-left: 20px;
+    position: relative;
+    color: #495057;
+    line-height: 1.5;
+}
+
+.lista-servicios li::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-size: 0.8em;
+}
+
+.beneficios-section {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #e9ecef;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.beneficio-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.beneficio-item:hover {
+    background: #e9ecef;
+}
+
+.beneficio-icon {
+    font-size: 1.5em;
+    flex-shrink: 0;
+}
+
+.beneficio-item h5 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.beneficio-item p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #servicios-aduaneros {
+        border-radius: 0;
+        padding: 15px;
+        width: 100%;
+    }
+
+    #servicios-aduaneros h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #servicios-aduaneros .boxuno {
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    .parrafoSA {
+        width: 100%;
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .servicio-card {
+        padding: 20px;
+    }
+
+    .servicio-card h4 {
+        font-size: 1em;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .beneficio-item {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .servicio-card {
+        padding: 15px;
+    }
+    
+    .lista-servicios li {
+        font-size: 0.9em;
+    }
+    
+    .beneficio-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}

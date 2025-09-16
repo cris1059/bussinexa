@@ -96,6 +96,18 @@ link: "/soluciones_integrales_para_empresas",
 link: "/asesoria_especializada"
     },
     {
+      title: "Servicios Aduaneros",
+      img: Curs,
+      desc: [
+  "• Asesoría disciplinar y profesional en proyectos de exportación",
+  "• Consultoría en regulaciones y restricciones no arancelarias",
+  "• Consultoría en procesos de despacho aduanal",
+  "• Asesoría y capacitación en materia logística y aduanera"
+]
+,
+link: "/servicios_aduaneros"
+    },
+    {
       title: "Cursos",
       img: Curs,
       desc: [
@@ -144,7 +156,7 @@ link: "/cursos"
 
       <div className='iconosS'>
           <div className="grupo">
-            {items.slice(0, 2).map((item, index) => (
+            {items.slice(0, 3).map((item, index) => (
               <div
                 className='img cursor-pointer'
                 key={index}
@@ -160,10 +172,10 @@ link: "/cursos"
           </div>
 
       <div className="grupo">
-        {items.slice(2, 4).map((item, index) => (
+        {items.slice(3, 5).map((item, index) => (
           <div
             className='img cursor-pointer'
-            key={index + 2}
+            key={index + 3}
             onClick={() => { Navegar(item.link); }}
           >
             <div className='circulo'>
