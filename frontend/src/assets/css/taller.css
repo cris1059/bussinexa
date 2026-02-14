@@ -1,0 +1,188 @@
+#taller {
+    background-color: #fff;
+    padding: 65px 100px;
+    color: #000; /* Match Beneficios text color */
+}
+
+/* h2 style removed to use global defaults like Beneficios */
+
+.taller-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; 
+    margin-top: 10px;
+}
+
+/* Top Row: Image & Title/Text */
+.taller-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.taller-img {
+    flex: 1;
+    max-width: 25%; 
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.taller-img:hover {
+    transform: scale(1.02);
+}
+
+.taller-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.taller-main-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.taller-main-content h3 {
+    color: var(--color-primario);
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.taller-main-content p {
+    font-size: 16px; /* Global standard */
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+/* Bottom Row: Info Text & Video */
+.taller-bottom-row {
+    display: flex;
+    gap: 40px;
+    align-items: center; 
+    margin-top: 20px;
+}
+
+.video-text-container {
+    flex: 1;
+}
+
+.video-text {
+    text-align: justify;
+    font-size: 16px; /* Reset to match other texts */
+    color: #333;
+    line-height: 1.6;
+}
+
+.taller-video {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.taller-video iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 420 / 235;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Modal Lightbox */
+.lightbox-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.lightbox-modal.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.5);
+}
+
+.lightbox-content img {
+    display: block;
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.lightbox-close:hover {
+    color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .taller-top-row, 
+    .taller-bottom-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .taller-img {
+        max-width: 60%;
+    }
+    
+    .taller-main-content,
+    .video-text-container {
+        max-width: 100%;
+    }
+
+    .taller-main-content p,
+    .video-text {
+        text-align: justify; 
+    }
+
+    .taller-video {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #taller {
+        padding: 40px 20px;
+    }
+    
+    #taller h2 {
+        font-size: 36px;
+    }
+}

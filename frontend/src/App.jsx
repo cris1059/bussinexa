@@ -22,6 +22,7 @@ import ServiciosAduaneros from "./templates/servicios/ServiciosAduaneros";
 import ModalPromoAduanero from "./components/ModalPromoAduanero";
 
 import Wp from "./components/Wp_icon";
+import Taller from './templates/Taller';
 
 
 
@@ -31,15 +32,15 @@ function Navbar() {
     <nav className="navbar text-white shadow-md">
       <div className="padding0 max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
 
-        {/* Links en escritorio */}
+      
         <div className="escritorio hidden md:flex space-x-6">
 
           <Link to="home" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Inicio</Link>
           <Link to="servicios" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Servicios</Link>
           <Link to="beneficios" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Beneficios</Link>
+          <Link to="taller" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Taller</Link>
           <Link to="empre" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Emprendimientos</Link>
           <Link to="quienes-somos" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Acerca</Link>
-          {/*<Link to="areas-asesoria" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Asesoria</Link>*/}
           <Link to="contacto" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Contacto</Link>
           
         </div>
@@ -71,6 +72,7 @@ function App() {
                 <Exp />
                 <Servicios />
                 <Beneficios />
+                <Taller />
                 <Empre />
                 <Acerca />
                 <Contacto />
