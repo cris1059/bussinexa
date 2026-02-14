@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import '../assets/css/components/modal-promo-aduanero.css';
 
 function ModalPromoAduanero() {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
   const [showCloseButton, setShowCloseButton] = useState(false);
   const navigate = useNavigate();
 
