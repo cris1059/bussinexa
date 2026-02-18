@@ -36,9 +36,9 @@ function Navbar() {
         <div className="escritorio hidden md:flex space-x-6">
 
           <Link to="home" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Inicio</Link>
+          <Link to="taller" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Taller</Link>
           <Link to="servicios" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Servicios</Link>
           <Link to="beneficios" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Beneficios</Link>
-          <Link to="taller" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Taller</Link>
           <Link to="empre" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Emprendimientos</Link>
           <Link to="quienes-somos" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Acerca</Link>
           <Link to="contacto" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Contacto</Link>
@@ -70,9 +70,9 @@ function App() {
               <div className="content_home">
                 <Home />
                 <Exp />
+                <Taller />
                 <Servicios />
                 <Beneficios />
-                <Taller />
                 <Empre />
                 <Acerca />
                 <Contacto />

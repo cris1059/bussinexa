@@ -61,7 +61,7 @@ function Acerca() {
             <img data-aos="zoom-in" className='img_fundadores' src={Fund} alt="" />
             <h3>Javier Nava Vega</h3> <br/>
             <p>Consultor en Desarrollo Empresarial y Fortalecimiento de Empresas Sociales
-Licenciado y Maestra en Economía por la UNAM. 
+Licenciado y Maestro en Economía por la UNAM. 
 Profesor de la Universidad Nacional Autónoma de México.
 Consultor especializado en el diseño, acompañamiento y fortalecimiento de modelos empresariales sostenibles, especialmente en comunidades rurales y empresas sociales. A lo largo de su carrera, ha brindado asesoría a proyectos productivos en más de 20 estados de la República Mexicana, consolidando más de 40 empresas en sectores como el forestal, agroindustrial, turístico, comercial y de servicios, entre otras.
 Su enfoque combina la planeación estratégica, el diseño de planes de negocio y la capacitación empresarial,  con el propósito de crear empresas sólidas, rentables y con impacto social. </p>
