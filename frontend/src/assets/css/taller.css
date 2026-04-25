@@ -182,7 +182,71 @@
         padding: 40px 20px;
     }
     
-    #taller h2 {
+    #taller h2, #novedades h2 {
         font-size: 36px;
     }
+}
+
+/* Novedades Carousel Styles */
+#novedades {
+    background-color: #fff;
+    padding: 65px 100px;
+    color: #000;
+}
+
+@media (max-width: 900px) {
+    #novedades {
+        padding: 40px 20px;
+    }
+}
+
+.novedades-carousel-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: transparent;
+    position: relative;
+}
+
+.novedades-carousel-track {
+    display: flex;
+    width: 400%; /* 4 slides (3 originals + 1 duplicate) */
+    animation: slide-animation 16s infinite;
+}
+
+.novedades-carousel-track:hover {
+    animation-play-state: paused;
+}
+
+.novedades-carousel-slide {
+    width: 25%; /* 100% / 4 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: transparent;
+    padding: 20px;
+}
+
+.novedades-carousel-slide:hover {
+    transform: scale(1.03);
+    z-index: 10;
+}
+
+.novedades-carousel-slide img {
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+@keyframes slide-animation {
+    0%, 23.33% { transform: translateX(0); }
+    33.33%, 56.66% { transform: translateX(-25%); }
+    66.66%, 90% { transform: translateX(-50%); }
+    100% { transform: translateX(-75%); }
 }
