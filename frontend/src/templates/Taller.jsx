@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import '../assets/css/taller.css';
 import TuMarca from '../assets/img/Tu_Marca.jpeg';
-// Imágenes para novedades (Asegúrate de guardarlas en src/assets/img con estos nombres)
-import novedad1 from '../assets/img/novedad1.jpeg';
-import novedad2 from '../assets/img/novedad2.jpeg';
-import novedad3 from '../assets/img/novedad3.jpeg';
+// Imagen para novedades
+import VentajasDesventajes from '../assets/img/ventajas.jpeg';
 
 function Taller() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,30 +24,30 @@ function Taller() {
       
       <div className="taller-container" data-aos="fade-up">
 
-        {/* --- CAROUSEL PURE CSS --- */}
-        <div className="novedades-carousel-container">
-          <div className="novedades-carousel-track">
-            <div className="novedades-carousel-slide" onClick={() => openLightbox(novedad1)}>
-              {/* Cambia el fallback si la imagen aún no se sube para que no se rompa la app */}
-              <img src={novedad1} alt="Novedad 1" onError={(e) => e.target.src=TuMarca} />
-            </div>
-            <div className="novedades-carousel-slide" onClick={() => openLightbox(novedad2)}>
-              <img src={novedad2} alt="Novedad 2" onError={(e) => e.target.src=TuMarca} />
-            </div>
-            <div className="novedades-carousel-slide" onClick={() => openLightbox(novedad3)}>
-              <img src={novedad3} alt="Novedad 3" onError={(e) => e.target.src=TuMarca} />
-            </div>
-            {/* Slide duplicado para lograr el efecto infinito sin cortes */}
-            <div className="novedades-carousel-slide" onClick={() => openLightbox(novedad1)}>
-              <img src={novedad1} alt="Novedad 1" onError={(e) => e.target.src=TuMarca} />
-            </div>
+        <div className="novedades-content" style={{ 
+          display: 'flex', 
+          flexDirection: 'row',
+          alignItems: 'center', 
+          justifyContent: 'center', 
+          gap: '50px', 
+          maxWidth: '1100px', 
+          margin: '0 auto',
+          flexWrap: 'wrap'
+        }}>
+          <div className="novedades-img-container" style={{ flex: '1', minWidth: '350px', display: 'flex', justifyContent: 'center' }}>
+             <img 
+               src={VentajasDesventajes} 
+               alt="Ventajas y Desventajas" 
+               className="novedades-promo-img"
+               onClick={() => openLightbox(VentajasDesventajes)}
+             />
           </div>
-        </div>
-
-        <div className="novedades-description" style={{ textAlign: 'center', marginTop: '30px' }}>
-          <p style={{ fontSize: '18px', color: '#333', maxWidth: '800px', margin: '0 auto', lineHeight: '1.6' }}>
-            ¡No te pierdas nuestro evento especial <strong>este martes</strong>! Acompáñanos en esta sesión única donde descubrirás estrategias clave, conocerás a nuestros expertos y sobre todo aprenderás cómo llevar tu negocio al siguiente nivel.
-          </p>
+          <div className="novedades-text-container" style={{ flex: '1', minWidth: '300px' }}>
+             <h3 style={{ color: 'var(--color-primario, #e30b0b)', fontSize: '28px', marginBottom: '15px' }}>¡Promoción Especial, No te lo puedes perder!</h3>
+             <p style={{ fontSize: '18px', color: '#333', lineHeight: '1.6', textAlign: 'justify' }}>
+               Conoce todas las ventajas y beneficios que tenemos preparados para ti. Acompáñanos en esta sesión única donde descubrirás estrategias clave, conocerás a nuestros expertos y sobre todo, aprenderás cómo llevar tu negocio al siguiente nivel con nuestras soluciones.
+             </p>
+          </div>
         </div>
 
         {/* ---SECCIÓN TALLER--- 
