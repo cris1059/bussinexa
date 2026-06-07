@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import '../assets/css/taller.css';
-import TuMarca from '../assets/img/Tu_Marca.jpeg';
-// Imagen para novedades
-import VentajasDesventajes from '../assets/img/ventajas.jpeg';
+import InnovacionImg from '../assets/img/Innovacion.jpeg';
+import RegistroMarcasImg from '../assets/img/Registro-Marcas.jpeg';
+import MasterClassImg from '../assets/img/Master-Class.jpeg';
 
 function Taller() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,75 +22,72 @@ function Taller() {
     <section id="novedades">
       <h2 data-aos="zoom-in">Novedades</h2>
       
-      <div className="taller-container" data-aos="fade-up">
-
-        <div className="novedades-content" style={{ 
-          display: 'flex', 
-          flexDirection: 'row',
-          alignItems: 'center', 
-          justifyContent: 'center', 
-          gap: '50px', 
-          maxWidth: '1100px', 
-          margin: '0 auto',
-          flexWrap: 'wrap'
-        }}>
-          <div className="novedades-img-container" style={{ flex: '1', minWidth: '350px', display: 'flex', justifyContent: 'center' }}>
-             <img 
-               src={VentajasDesventajes} 
-               alt="Ventajas y Desventajas" 
-               className="novedades-promo-img"
-               onClick={() => openLightbox(VentajasDesventajes)}
-             />
-          </div>
-          <div className="novedades-text-container" style={{ flex: '1', minWidth: '300px' }}>
-             <h3 style={{ color: 'var(--color-primario, #e30b0b)', fontSize: '28px', marginBottom: '15px' }}>¡Promoción Especial, No te lo puedes perder!</h3>
-             <p style={{ fontSize: '18px', color: '#333', lineHeight: '1.6', textAlign: 'justify' }}>
-               Conoce todas las ventajas y beneficios que tenemos preparados para ti. Acompáñanos en esta sesión única donde descubrirás estrategias clave, conocerás a nuestros expertos y sobre todo, aprenderás cómo llevar tu negocio al siguiente nivel con nuestras soluciones.
-             </p>
-          </div>
-        </div>
-
-        {/* ---SECCIÓN TALLER--- 
-        <div className="taller-top-row" style={{ marginTop: '50px' }}>
-            <div className="taller-img" onClick={() => openLightbox(TuMarca)}>
-                <img src={TuMarca} alt="Taller Tu Marca" />
-            </div>
-            
-            <div className="taller-main-content">
-                <h3>Haz que tu negocio sea oficialmente tuyo, no permitas que el nombre que construiste con tanto esfuerzo sea usado por alguien más.</h3>
-                <p>
-                    El éxito comienza con la certeza legal. Aprende a gestionar tu registro de marca de manera estratégica y construye una base sólida para el crecimiento de tu empresa.
-                </p>
-            </div>
-        </div>
-
-        <div className="taller-bottom-row">
-            <div className="video-text-container">
-                <p className="video-text">
-                  ¿Sabías que tener el dominio web o el nombre en redes sociales no te hace dueño legal de tu marca? Sin un título de registro ante el IMPI, cualquier persona podría arrebatártela. Evita demandas y cierres legales integrándote a nuestro taller práctico, donde obtendrás tu solicitud lista para enviar y blindar tu negocio para siempre.
-                </p>
-            </div>
-            <div className="taller-video">
-                <iframe 
-                    width="420" 
-                    height="235" 
-                    src="https://www.youtube.com/embed/o9VrwHVlcuc" 
-                    title="YouTube video player" 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowFullScreen
-                ></iframe>
-            </div>
-        </div>
-        */}
+      <div className="taller-container">
         
+        {/* Bloque 1: Master Class (Imagen Izquierda, Texto Derecha) */}
+        <div className="novedades-item card-glass" data-aos="fade-right">
+          <div className="novedades-img-container">
+            <img 
+              src={MasterClassImg} 
+              alt="Master Class de CV y Entrevista" 
+              className="novedades-promo-img"
+              onClick={() => openLightbox(MasterClassImg)}
+            />
+          </div>
+          <div className="novedades-text-container">
+            <span className="novedades-tag">Desarrollo Profesional</span>
+            <h3>Impulsa tu Futuro Profesional</h3>
+            <p>
+              Diseñada especialmente para estudiantes y recién graduados, esta máster class presencial te brindará las herramientas definitivas para destacar en el competitivo mercado laboral. Aprende a redactar un currículum de alto impacto y domina las técnicas clave para triunfar en entrevistas de trabajo en entornos profesionales reales. ¡El momento de abrir las puertas a tu éxito profesional es ahora!
+            </p>
+          </div>
+        </div>
+
+        {/* Bloque 2: Registro de Marcas (Texto Izquierda, Imagen Derecha) */}
+        <div className="novedades-item card-glass reverse" data-aos="fade-left">
+          <div className="novedades-text-container">
+            <span className="novedades-tag">Identidad de Marca</span>
+            <h3>Asegura la Identidad de tu Negocio</h3>
+            <p>
+              Tu marca es tu activo comercial más valioso; no permitas que otros se apropien del nombre que construiste con tanto esfuerzo. Conoce el proceso paso a paso, los requisitos indispensables y las estrategias clave para registrar exitosamente tu marca ante el <strong>IMPI</strong>. Fortalece tu presencia comercial, genera confianza en tus clientes y blinda legalmente tu negocio desde hoy.
+            </p>
+          </div>
+          <div className="novedades-img-container">
+            <img 
+              src={RegistroMarcasImg} 
+              alt="Registro de Marcas" 
+              className="novedades-promo-img"
+              onClick={() => openLightbox(RegistroMarcasImg)}
+            />
+          </div>
+        </div>
+
+        {/* Bloque 3: Innovación (Imagen Izquierda, Texto Derecha) */}
+        <div className="novedades-item card-glass" data-aos="fade-right">
+          <div className="novedades-img-container">
+            <img 
+              src={InnovacionImg} 
+              alt="Innovación y Propiedad Intelectual" 
+              className="novedades-promo-img"
+              onClick={() => openLightbox(InnovacionImg)}
+            />
+          </div>
+          <div className="novedades-text-container">
+            <span className="novedades-tag">Capacitación y Legalidad</span>
+            <h3>¡Protege tu Creatividad e Innovación!</h3>
+            <p>
+              Descubre cómo resguardar tus ideas más valiosas y convertirlas en activos estratégicos para tu negocio. Aprende de la mano del Mtro. Javier Nava Vega la importancia de proteger tus obras y creaciones ante <strong>INDAUTOR</strong>. Blindar tu propiedad intelectual es el primer paso para impulsar la innovación, aportar valor real a tus proyectos y asegurar tu éxito en el mercado.
+            </p>
+          </div>
+        </div>
+
       </div>
 
       {isOpen && (
         <div className={`lightbox-modal ${isOpen ? 'open' : ''}`} onClick={closeLightbox}>
           <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
             <button className="lightbox-close" onClick={closeLightbox}>×</button>
-            <img src={currentImg} alt="Zoom Lightbox" />
+            <img src={currentImg} alt="Zoom Novedades" />
           </div>
         </div>
       )}
@@ -99,3 +96,4 @@ function Taller() {
 }
 
 export default Taller;
+

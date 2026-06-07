@@ -187,31 +187,150 @@
     }
 }
 
-/* Novedades Carousel Styles */
+/* Novedades Section Styles */
 #novedades {
     background-color: #fff;
-    padding: 65px 100px;
+    padding: 80px 100px;
     color: #000;
 }
 
 @media (max-width: 900px) {
     #novedades {
-        padding: 40px 20px;
+        padding: 50px 20px;
     }
 }
 
-/* Novedades Promo Image */
-.novedades-promo-img {
-    width: 100%; 
-    max-width: 575px; 
-    height: 460px; 
-    object-fit: contain; 
-    border-radius: 12px; 
-    mix-blend-mode: multiply; /* Esto vuelve transparente el fondo blanco del JPEG */
-    cursor: pointer;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+/* Glassmorphism Floating Cards */
+.novedades-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 70px;
+    padding: 50px;
+    border-radius: 24px;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s ease;
 }
 
-.novedades-promo-img:hover {
-    transform: translateY(-8px) scale(1.03);
+.card-glass {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.03), 
+        0 5px 15px rgba(0, 0, 0, 0.01),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+}
+
+.card-glass:hover {
+    transform: translateY(-8px);
+    box-shadow: 
+        0 30px 60px rgba(0, 0, 0, 0.07), 
+        0 10px 20px rgba(0, 0, 0, 0.02);
+}
+
+/* Row reversal for second block */
+.novedades-item.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Image Container and Hover interactive effects (Tilt & Zoom) */
+.novedades-img-container {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    justify-content: center;
+    perspective: 1200px;
+}
+
+.novedades-promo-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease;
+}
+
+/* Interactive 3D Tilt on Hover */
+.novedades-img-container:hover .novedades-promo-img {
+    transform: scale(1.06) rotateY(-5deg) rotateX(4deg);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+}
+
+.novedades-item.reverse .novedades-img-container:hover .novedades-promo-img {
+    transform: scale(1.06) rotateY(5deg) rotateX(4deg);
+}
+
+/* Text Container styles */
+.novedades-text-container {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.novedades-tag {
+    align-self: flex-start;
+    padding: 6px 14px;
+    background: rgba(227, 11, 11, 0.06); /* Using primary red tint */
+    color: var(--color-primario, #e30b0b);
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.novedades-text-container h3 {
+    font-size: 32px;
+    color: var(--color-primario, #e30b0b);
+    margin-bottom: 18px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.novedades-text-container p {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #444;
+    text-align: justify;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .novedades-item {
+        gap: 40px;
+        padding: 30px 20px;
+        margin-bottom: 50px;
+    }
+    
+    .novedades-item, 
+    .novedades-item.reverse {
+        flex-direction: column;
+    }
+
+    .novedades-img-container {
+        max-width: 80%;
+    }
+
+    .novedades-promo-img {
+        max-width: 320px;
+    }
+
+    .novedades-text-container {
+        text-align: center;
+    }
+
+    .novedades-tag {
+        align-self: center;
+    }
+    
+    .novedades-text-container h3 {
+        font-size: 26px;
+    }
 }
