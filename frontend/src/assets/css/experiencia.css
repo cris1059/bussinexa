@@ -1,80 +1,94 @@
-#experiencia{
-    background-color: #fff;
+#experiencia {
+    background-color: #ffffff;
+    padding: 80px 20px;
 }
 
-.fond{
-    
-    background-color: #fff;
-    
-    padding: 50px 100px;
+.fond {
+    max-width: 1350px;
+    width: 92%;
+    margin: 0 auto;
+    padding: 0;
 }
 
-.fond h2{
+.fond h2 {
     text-align: center;
-    padding: 25px 0;
+    font-size: 36px;
+    color: var(--color-primario, #002A64);
+    font-weight: 700;
+    margin-bottom: 50px;
 }
 
-.exp{
-    display: flex;
+.exp-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    align-items: stretch;
     width: 100%;
-    margin: 20px auto;
 }
-.exp .apartado{
+
+.exp-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: #f8fafc;
+    padding: 32px 26px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.exp-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(0, 42, 100, 0.12);
+    border-color: var(--color-secundario, #7C9FC5);
+    background: #ffffff;
+}
+
+.exp-icon-wrapper {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: rgba(0, 42, 100, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+.exp-icon-wrapper img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.exp-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.exp img{
-    width: 100px;
+.exp-content h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 8px 0;
+    text-align: left;
 }
 
-.exp h3{
-
-font-size: 18px;
-text-align: center;
-margin: 25px 0;
+.exp-content p {
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0;
+    text-align: left;
 }
 
-.texto-desplegable h2,
-.texto-desplegable h3 {
-  margin: 0;
-  padding: 0 10px;
-  opacity: 1;
-  transition: opacity 0.5s ease;
-}
-
-.texto-desplegable {
-  overflow: hidden;
-}
-
-
-@media (max-width: 620px){
-
-    .exp{
-        gap: 2rem;
-        justify-content: center;
-    }
-
-    .fond h2{
-        font-size: 25px;
-}
-
-    .exp .apartado{
-        width: 89px;
-    }
-
-    .texto-desplegable{
-        height: 250px;
-    }
-
-    .texto-desplegable h2{
-        font-size: 13px !important;
-        margin-top: 10px;
-    }
-
-    .texto-desplegable h3{
-    font-size: 10px !important;
-    margin-top: 10px;
+@media (max-width: 1000px) {
+    .exp-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        max-width: 600px;
+        margin: 0 auto;
     }
 }

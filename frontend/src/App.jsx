@@ -33,15 +33,15 @@ function Navbar() {
       <div className="padding0 max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
 
       
-        <div className="escritorio hidden md:flex space-x-6">
+        <div className="escritorio hidden md:flex space-x-2">
 
-          <Link to="home" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Inicio</Link>
-          <Link to="novedades" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Novedades</Link>
-          <Link to="servicios" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Servicios</Link>
-          <Link to="beneficios" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Beneficios</Link>
-          <Link to="empre" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Emprendimientos</Link>
-          <Link to="quienes-somos" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Acerca</Link>
-          <Link to="contacto" smooth={true} duration={600} className="cursor-pointer hover:text-gray-200">Contacto</Link>
+          <Link to="home" spy={true} smooth={true} duration={600} activeClass="active" className="nav-item">Inicio</Link>
+          <Link to="novedades" spy={true} smooth={true} duration={600} activeClass="active" className="nav-item">Novedades</Link>
+          <Link to="servicios" spy={true} smooth={true} duration={600} activeClass="active" className="nav-item">Servicios</Link>
+          <Link to="beneficios" spy={true} smooth={true} duration={600} activeClass="active" className="nav-item">Beneficios</Link>
+          <Link to="empre" spy={true} smooth={true} duration={600} activeClass="active" className="nav-item">Emprendimientos</Link>
+          <Link to="quienes-somos" spy={true} smooth={true} duration={600} activeClass="active" className="nav-item">Acerca</Link>
+          <Link to="contacto" spy={true} smooth={true} duration={600} activeClass="active" className="nav-item">Contacto</Link>
           
         </div>
       </div>
